@@ -16,7 +16,7 @@ body {
 
 .relative {
   position: relative;
-  top: -33px;
+  top: -58px;
 }  .relative:before{
     content: "";
     position: absolute;
@@ -76,6 +76,7 @@ body {
 } .middle{
     display: flex;
     gap: 100px;
+    font-family: 'Orbitron';
   }
 
 .header a {
