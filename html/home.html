@@ -13,46 +13,95 @@
 
 </head>
 <body>
+
+<!-- header -->
   <header> 
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-      </ul>
+    <nav class="header-nav">
+      <div class="header">
+        <a href="home.html">Home</a>
+        <a href="game.html">Game</a>
+        <a href="contact.html">Contact</a>
+        <a href="aboutus.html">About us</a>
+      </div>
     </nav>
+
   </header>
 
+<!-- main -->
+  <main class="main-body">
+    <div class="bg">
+      <div class="relative">
+        <img class="body-bg" src="/img/body-bg.jpg" alt="">
+       <div class="poet">
+          <img class="poet-img" src="/img/logo.png" alt="">
+       </div>
+       </div>
+    </div>
+  </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
+<!-- footer -->
   <footer>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-      </ul>
-      <p> &copy; All Rights Reserved FETI Entertainment 2026 | Privacy | Terms of use
-  Site Build by ESGUERRA | Site Design by CAMONIAS </p>
-    </nav>
+    <p>&copy; All Rights Reserved FETI Entertainment 2026 | Privacy | Terms of use 
+      | Site Build by ESGUERRA | Site Design by CAMONIAS</p>
   </footer>
 
 </body>
 
 <style>
 
+  p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body{
+    background-color: black;
+  } .bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bg .body-bg {
+  position: relative;
+  width:2000px;       
+  height: auto;        
+  object-fit: cover;
+} 
+
+.relative{
+  position: relative;
+} .poet{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translate(-50%);
+  } .poet .poet-img{
+      width: 800px;
+    }
+
+
+  .header{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    z-index: 100;
+    margin-bottom: 20px ;
+    padding-top: 10px;
+    font-size: 30px;
+  }
+  .header a{
+    text-decoration: none;
+    color: white;
+  }
+
+
 </style>
+
+
 </html>
