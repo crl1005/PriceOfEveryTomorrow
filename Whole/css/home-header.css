@@ -49,8 +49,8 @@
   color: orange;
 }
 
-.left-nav:has(a:hover) a:not(:hover),
-.right-nav:has(a:hover) a:not(:hover) {
+.header .left-nav:has(a:hover) a:not(:hover),
+.header .right-nav:has(a:hover) a:not(:hover) {
   opacity: 0.5;
   transform: scale(0.90);
 }
