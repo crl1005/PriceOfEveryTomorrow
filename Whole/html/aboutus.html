@@ -7,6 +7,8 @@
 
   <!-- files -->
   <link rel="stylesheet" href="../css/about-us.css">
+  <link rel="stylesheet" href="../css/home-header.css">
+  <link rel="stylesheet" href="../css/home-general.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -14,15 +16,33 @@
 </head>
 <body>
   <header> 
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-      </ul>
-    </nav>
+    <nav class="header-nav">
+    <div class="header">
+      <div class="left-nav">
+        <a href="home.html" class="active">Home</a>
+        <a href="game.html">Game</a>
+      </div>
+      
+      <div class="middle-logo">
+        <img class="header-logo" src="/img/logo.png" alt="">
+      </div>
+      
+      <div class="right-nav">
+        <a href="contact.html">Contact</a>
+        <a href="aboutus.html">About us</a>
+      </div>
+    </div>
+  </nav>
   </header>
+
+  <main class="main-body">
+    <div class="bg">
+      <div class="relative">
+        <img class="body-bg" src="/img/body-bg.jpg" alt="">
+      </div>
+    </div>
+  </div>
+ </main>
 
   <h1>ABOUT US</h1>
   <h2>A small team focused on meaningful player decisions.</h2>
@@ -65,17 +85,9 @@ Our Goal</p>
 
 
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-      </ul>
-      <p> &copy; All Rights Reserved FETI Entertainment 2026 | Privacy | Terms of use
-  Site Build by ESGUERRA | Site Design by CAMONIAS </p>
-    </nav>
+  <footer class="footer">
+    <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
+      &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
   </footer>
 
 </body>
