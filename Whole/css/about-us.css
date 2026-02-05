@@ -55,7 +55,7 @@
 
 .page-header {
     position: absolute;
-  bottom: 200px;
+  bottom: -360px;
   right: 280px;
   left: 280px;
 }
@@ -64,10 +64,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: -2%;
+  line-height: 100%;
 }
 .page-header h2 {
+  color: #ffba69;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -1.5%;
+  line-height: 110%;
+}
+.page-header p {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: default;
+  line-height: 150%;
 }
