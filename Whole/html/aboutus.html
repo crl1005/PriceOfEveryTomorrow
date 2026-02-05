@@ -7,6 +7,8 @@
 
   <!-- files -->
   <link rel="stylesheet" href="../css/about-us.css">
+  <link rel="stylesheet" href="../css/home-header.css">
+  <link rel="stylesheet" href="../css/home-general.css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -14,22 +16,41 @@
 </head>
 <body>
   <header> 
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-      </ul>
-    </nav>
+    <nav class="header-nav">
+    <div class="header">
+      <div class="left-nav">
+        <a href="home.html" class="active">Home</a>
+        <a href="game.html">Game</a>
+      </div>
+      
+      <div class="middle-logo">
+        <img class="header-logo" src="/img/logo.png" alt="">
+      </div>
+      
+      <div class="right-nav">
+        <a href="contact.html">Contact</a>
+        <a href="aboutus.html">About us</a>
+      </div>
+    </div>
+  </nav>
   </header>
 
-  <h1>ABOUT US</h1>
-  <h2>A small team focused on meaningful player decisions.</h2>
- <p>We are a team of Filipino students from Golden Faith Academy, passionate about creating games that reflect real issues in the Philippines. Our goal is to combine engaging gameplay with meaningful stories that make players think. We focus on challenges like social unrest, corruption, and everyday struggles, turning them into experiences that entertain and educate. Through our games, we aim to share our perspective, spark discussion, and inspire change.
-
-We believe games can be more than just entertainment. They can teach lessons, raise awareness, and encourage empathy. Every project we create is carefully designed to show the realities of our society while giving players the freedom to make choices and explore consequences. Our team works together to bring creativity, research, and culture into every game we build. We hope our games not only challenge players but also highlight the resilience, diversity, and spirit of the Filipino people.
-</p>
+  <main class="main-body">
+    <div class="bg">
+      <div class="relative">
+        <img class="body-bg" src="/img/body-bg.jpg" alt="">
+        <div class="page-header">
+                  <h1>ABOUT US</h1>
+                  <h2>A small team focused on meaningful player decisions.</h2>
+                <p>We are a team of Filipino students from Golden Faith Academy, passionate about creating games that reflect real issues in the Philippines. Our goal is to combine engaging gameplay with meaningful stories that make players think. We focus on challenges like social unrest, corruption, and everyday struggles, turning them into experiences that entertain and educate. Through our games, we aim to share our perspective, spark discussion, and inspire change.
+ <br><br>We believe games can be more than just entertainment. They can teach lessons, raise awareness, and encourage empathy. Every project we create is carefully designed to show the realities of our society while giving players the freedom to make choices and explore consequences. Our team works together to bring creativity, research, and culture into every game we build. We hope our games not only challenge players but also highlight the resilience, diversity, and spirit of the Filipino people.
+                </p>
+              </div>
+      </div>
+                    
+    </div>
+  </div>
+ </main>
 
 <div class="box">
     <div class="box values">
@@ -65,17 +86,9 @@ Our Goal</p>
 
 
 
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="game.html">Game</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-      </ul>
-      <p> &copy; All Rights Reserved FETI Entertainment 2026 | Privacy | Terms of use
-  Site Build by ESGUERRA | Site Design by CAMONIAS </p>
-    </nav>
+  <footer class="footer">
+    <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
+      &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
   </footer>
 
 </body>
