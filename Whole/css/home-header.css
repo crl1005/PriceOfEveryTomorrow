@@ -9,17 +9,7 @@
   z-index: 1000;
 }
 
-.header-nav::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.3);
-  z-index: 1;
-}
+
 
 .header {
   display: flex;
