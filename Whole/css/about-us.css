@@ -1,3 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+  height: 200px;
+}
+
+p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+}
+
+.active{
+  text-decoration: underline;
+  color: orange;
+}
+
 .bg {
   display: flex;
   justify-content: center;
@@ -54,8 +83,8 @@
 }
 
 .page-header {
-    position: absolute;
-  bottom: -360px;
+  position: absolute;
+  bottom: -380px;
   right: 280px;
   left: 280px;
 }
@@ -66,6 +95,7 @@
   align-items: center;
   letter-spacing: -2%;
   line-height: 100%;
+  font-size: 50px;
 }
 .page-header h2 {
   color: #ffba69;
@@ -82,4 +112,5 @@
   align-items: center;
   letter-spacing: default;
   line-height: 150%;
+  font-family: 'Orbitron';
 }
