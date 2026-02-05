@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  z-index: 100;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 5px;
+  margin-top: -40px;
+  padding-top: 10px;
+  font-size: 30px;
+
+} .middle{
+    display: flex;
+    gap: 100px;
+    font-family: 'Orbitron';
+    font-size: 20px;
+  } .middle a{
+    transition: all 0.3s ease;
+  } .middle a:hover{
+      text-decoration: underline;
+      text-decoration-color: rgb(238, 171, 47);
+      transform: scale(1.1);
+      color: orange;
+      } .middle:has(a:hover) a:not(:hover) {
+          opacity: 0.5;
+          transform: scale(0.90);
+          
+        } 
+
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-logo{
+  width: 150px;
+  top: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
