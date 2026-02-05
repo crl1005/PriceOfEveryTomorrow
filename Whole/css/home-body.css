@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 }
 .bg .body-bg {
   filter: brightness(0.6);
@@ -12,6 +13,14 @@
   height: auto;
   object-fit: cover;
   display: block;
+  animation: zoomIn 10s ease-out forwards;
+} @keyframes zoomIn {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .relative {
