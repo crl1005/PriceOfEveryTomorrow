@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  bottom: auto;
+  bottom: 92%;
   width: 100%;
   background-color: rgba(43, 42, 42, 0.9);
   backdrop-filter: blur(10px);
@@ -13,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 2000px;
   position: relative;
 } 
 
