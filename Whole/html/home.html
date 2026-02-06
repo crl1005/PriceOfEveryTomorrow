@@ -18,7 +18,6 @@
 
 </head>
 <body>
-
 <!-- header -->
 <header> 
   <nav class="header-nav">
@@ -61,13 +60,47 @@
     </div>
 
     <div class="apps">
-      <img src="/img/steam.png" alt="">
-      <img src="/img/playstation-logotype.png" alt="">
-      <img src="/img/xbox-logo.png" alt="">
+      <a href="https://store.steampowered.com/">
+        <img src="/img/steam.png">
+      </a>
+      <a href="https://www.playstation.com/en-ph/ps5/?emcid=pa-co-520100&gclsrc=aw.ds&gad_source=1&gad_campaignid=20725018209&gbraid=0AAAAAqPsW7joCC3cnD-ItJkN1uPj0r4W-&gclid=Cj0KCQiAnJHMBhDAARIsABr7b84Ar6xKuJ42L5jjMZNLxE8FqXscS9wfDY9w943E9GwKuxZjY8J2Lf0aAs4BEALw_wcB">
+        <img src="/img/playstation-logotype.png" alt="">
+      </a>
+      <a href="https://www.xbox.com/en-IN/">
+        <img src="/img/xbox-logo.png" alt="">
+      </a>
+      
     </div>
 
     <div class="get-now"> GET NOW</div>
+    <br><br>
+    <div class="line-img"><img src="/img/Line.png" alt=""> </div>
 
+
+  <!-- section 3 -->  
+    <div class="section3-header">
+        <div class="right-arrow">
+          <img src="/img/arrow-logo.png" alt="">
+        </div>
+
+        <div class="middle-text">
+          Choose Your Path
+        </div>
+
+        <div class="left-arrow">
+          <img src="/img/arrow-logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="bottom-text">
+      <p class="paragraph">
+      A single-player survival strategy game set in a 
+      dystopian nation crumbling under the weight of extreme inflation, 
+      political corruption, and social unrest. The player starts with nothing 
+      but a small stash of resources and must navigate a dangerous world where 
+      every choice matters.
+      </p>
+    </div>
 <!-- footer -->
   <footer class="footer">
 
@@ -76,5 +109,32 @@
   </footer>
 
 </body>
+
+
+<script>
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 100 &&
+      rect.bottom >= 0
+    );
+  }
+
+  function handleScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.apps-title, .apps, .get-now, .section3-header, .bottom-text');
+    
+    animatedElements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('visible');
+      } else {
+        element.classList.remove('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScrollAnimations);
+  window.addEventListener('load', handleScrollAnimations);
+  handleScrollAnimations();
+</script>
 
 </html>

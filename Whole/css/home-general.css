@@ -3,7 +3,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-color: black;
-  height: 10000px;
+  height: 2500px;
 }
 
 p {
@@ -11,15 +11,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  z-index: 100;
 }
 
 .active{

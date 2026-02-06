@@ -7,6 +7,7 @@
   overflow: hidden;
   position: relative;
 }
+
 .bg .body-bg {
   filter: brightness(0.6);
   max-width: 100%;
@@ -18,15 +19,14 @@
 } 
 
 .bg::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient( circle at 50% 30%, transparent 0%, 
-    rgba(0, 0, 0, 0.3) 50%, rgba( 0, 0, 0, 0.6) 100%); 
-    z-index: 1;
-  }
-
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 30%, transparent 0%, 
+  rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.6) 100%); 
+  z-index: 1;
+}
 
 @keyframes zoomIn {
   from {
@@ -40,7 +40,7 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -48,50 +48,33 @@
   }
 }
 
-.apps-title {
-  animation: fadeInUp 1s ease-out;
-}
-
-.apps img {
-  animation: fadeInUp 1s ease-out;
-  animation-delay: 0.2s; /* Each appears slightly after the previous */
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
-.apps img:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.apps img:nth-child(3) {
-  animation-delay: 0.6s;
-}
-  
 .relative {
   position: relative;
   top: -58px;
   z-index: 2;
-}  .relative:before{
-    content:"";
-    background: linear-gradient(to bottom, black, transparent);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    pointer-events: none;
-    }
+}
+
+.relative:before{
+  content:"";
+  background: linear-gradient(to bottom, black, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+}
 
 .relative:after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 600px;
-    background: linear-gradient(to top, black, transparent);
-    pointer-events: none;
-    }
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to top, black, transparent);
+  pointer-events: none;
+}
 
 .poet {
   position: absolute;
@@ -104,10 +87,11 @@
   width: 800px;
   max-width: 90vw;
   height: auto;
-} .poet-img{
-      filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.3));
-    }
-  
+}
+
+.poet-img{
+  filter: drop-shadow(0 0 30px rgba(255, 215, 0, 0.3));
+}
 
 .watch-trailer{
   color: #e7fdfff5;
@@ -126,15 +110,16 @@
   letter-spacing: 2px;
   opacity: 0.9;
   font-weight: 600;
-} .watch-trailer:hover{
-    transform: translateX(-50%) scale(1.1);
-    background-color: rgba(255, 255, 255, 0.2); 
-    box-shadow: 0 0 20px rgba(247, 247, 142, 0.5),
-    inset 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.watch-trailer:hover{
+  transform: translateX(-50%) scale(1.1);
+  background-color: rgba(255, 255, 255, 0.2); 
+  box-shadow: 0 0 20px rgba(247, 247, 142, 0.5),
+  inset 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 /* section 2 */
-
 .apps, .apps-title {
   display: flex;
   flex-direction: row;
@@ -144,43 +129,59 @@
   gap: 200px;
 }
 
-
 .apps-title{
   color: white;
   font-size: 50px;
   font-family: Orbitron;
   padding-bottom: 50px;
-  font-size: 50px;
   letter-spacing: 8px;
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
-} .apps-title::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 2px;
-    background: linear-gradient
-    (
-      to right,
-      transparent,
-      rgb(247, 247, 142),
-      transparent
-    );
-  }
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.apps-title.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.apps-title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgb(247, 247, 142), transparent);
+}
+
+.apps{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.apps.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .apps img{
   filter: brightness(0) invert(1);
   width: 100px;
   cursor: pointer;
   padding-bottom: 100px;
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}  .apps img:hover {
-    filter: brightness(0) invert(1) drop-shadow(0 5px 15px rgba(255, 255, 255, 0.5));
-    transform: translateY(-10px) scale(1.1);
-  }
+}
+
+.apps img:hover {
+  filter: brightness(0) invert(1) drop-shadow(0 5px 15px rgba(255, 255, 255, 0.5));
+  transform: translateY(-10px) scale(1.1);
+}
 
 .get-now{
   color: rgb(255, 255, 255);
@@ -195,12 +196,95 @@
   margin: 0 auto 100px;
   cursor: pointer;
   transition: all 0.3s ease;
-} .get-now:hover{
-    transform: scale(1.5);
-    box-shadow: 0 0 20px white;
-  }
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out, all 0.3s ease;
+}
 
+.get-now.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.get-now:hover{
+  transform: scale(1.5);
+  box-shadow: 0 0 20px white;
+}
+
+.line-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 200px;
+}
+
+.line-img img{
+  transform: scaleX(1);
+  width: 100%;
+  height: 100px;
+  max-height: 50px;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+/*section 3*/
+.section3-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section3-header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.left-arrow{
+  transform: scaleX(-1);
+}
+
+.section3-header .middle-text{
+  color: orange;
+  font-size: 60px;
+  text-align: center;
+  width: 350px;
+  font-family: Orbitron;
+  font-weight: bold;
+}
+
+.section3-header img{
+  width: 200px;
+  height: auto;
+}
+
+.bottom-text{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;  
+  margin: 0 auto;
+  font-size: 35px;
+  text-align: justify;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  font-family: Orbitron;
+}
+
+.bottom-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* footer */
 .footer {
@@ -213,4 +297,13 @@
   opacity: 0.6;
   font-size: 12px;
   letter-spacing: 1px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
 }

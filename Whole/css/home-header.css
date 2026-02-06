@@ -108,3 +108,19 @@
 .header .right-nav{
   margin-left: 100px;
 }
+
+.center-nav .active{
+  color: orange;
+}
+
+.second-border {
+  background: linear-gradient(to top, black, transparent);
+  padding: 20000px 575px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+}
+.second-border p {
+  opacity: 0.6;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
