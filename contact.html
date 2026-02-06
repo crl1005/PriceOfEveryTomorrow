@@ -37,29 +37,67 @@
 <!-- Changed parent div class -->
 <div class="box">
     <div class="faqs">
-        <p class="tip">FAQs</p>
-        <p class="second-text">Find quick answers to common questions about gameplay, mechanics, progress, and technical requirements.</p>
+        <p class="tip">FAQS</p>
+        <p class="second-text">Find quick answers to common questions about gameplay, mechanics, progress, and technical requirements. This section helps you understand the game and resolve issues without delay.</p>
+        <button>FAQS</button>
     </div>
     <div class="support">
         <p class="tip">SUPPORT</p>
-        <p class="second-text">Get help with technical issues, bugs, or account problems.</p>
+        <p class="second-text">Report glitches, crashes, or unexpected behavior you experience while playing. Your reports help improve performance, balance, and overall game stability.</p>
+        <button>SUPPORT</button>
     </div>
     <div class="feedback">
-        <p class="tip">Feedback & Suggestions</p>
-        <p class="second-text">Share your thoughts, suggestions, and feature ideas.</p>
+        <p class="tip">FEEDBACK & SUGGESTIONS</p>
+        <p class="second-text">Share your thoughts, suggestions, and feature ideas. Your feedback helps shape future updates and improve the overall direction of the game.</p>
+        <button>FEEDBACK</button>
     </div>
 </div>
 
+<div class="media-transition">
 <h3>FOLLOW US</h3>
-<div class="icons">
-  <img class="media-icons" src="img/discord.png" alt="Discord">
-  <img class="media-icons" src="img/youtube.png" alt="YouTube">
-  <img class="media-icons" src="img/instagram.png" alt="Instagram">
-  <img class="media-icons" src="img/twitter.png" alt="Twitter">
+  <div class="icons">
+    <img class="media-icons" src="img/discord.png" alt="Discord">
+    <img class="media-icons" src="img/youtube.png" alt="YouTube">
+    <img class="media-icons" src="img/instagram.png" alt="Instagram">
+    <img class="media-icons" src="img/twitter.png" alt="Twitter">
+  </div>
 </div>
 
+<div class="email">
 <h4>SEND US AN EMAIL</h4>
 <p>fetientertainment@gmail.com</p>
+</div>
+<!-- footer -->
+  <footer class="footer">
 
+    <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
+      &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
+  </footer>
 
 </html>
+
+<script>
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 100 &&
+      rect.bottom >= 0
+    );
+  }
+
+  function handleScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.box, h1, h2, .media-transition, .email, .icons');
+    
+    animatedElements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('visible');
+      } else {
+        element.classList.remove('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScrollAnimations);
+  window.addEventListener('load', handleScrollAnimations);
+  handleScrollAnimations();
+</script>

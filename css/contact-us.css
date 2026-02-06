@@ -11,14 +11,14 @@ h1 {
   color: white;
   text-align: center;
   font-size: 50px;
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 h2 {
   color: #ffba69;
   text-align: center;
   font-size: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 240px;
 }
 
 h3 {
@@ -33,10 +33,12 @@ h4 {
   color: #ffa947;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 5px;
   font-size: 30px;
 }
 
 p {
+  margin-top: 5px;
   color: white;
   text-align: center;
 }
@@ -49,6 +51,14 @@ p {
   align-items: center;
   justify-content: center;
   margin: 50px 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.box.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Individual box - FIXED */
@@ -58,14 +68,16 @@ p {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 430px;
+  height: 450px;
   width: 300px;
   border-radius: 10px;
-  border: 2px solid #ffa947;
+  border: 10px solid #ffa947;
   color: white;
-  cursor: pointer;
   transition: 400ms;
   padding: 20px;
+}
+.feedback .tip{
+  height: 50px;
 }
 
 .box > div:hover {
@@ -75,12 +87,35 @@ p {
 .box:hover > div:not(:hover) {
   transform: scale(0.9);
 }
+button{
+   border: 10px solid #ffffff;
+   background-color: #ffa947;
+   border-radius: 8px;
+   height: 100px;
+   width: 250px;
+   font-size: 30px;
+   font-weight: bolder;
+   color: white;
+   transition: 400ms;
+   cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.05);
+  background-color: #ffffff;
+  border: 8px solid #ffa947;
+  color: #ffa947;
+
+}
+button:active{
+  transform: scale(1);
+}
 
 /* Tip text */
 .tip {
   color: #ffa947 !important;
   font-size: 40px;
-  margin: 10px;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -89,10 +124,24 @@ p {
   font-size: 16px;
   line-height: 1.5;
   padding: 20px;
-  text-align: center;
+  height: 300px;
 }
 
 /* Media icons */
+.icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 80px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.icons.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 .media-icons {
   filter: invert(58%) sepia(85%) saturate(2400%) hue-rotate(352deg) brightness(101%) contrast(105%);
   width: 60px;
@@ -111,6 +160,29 @@ p {
   filter: brightness(0) invert(1);
   transform: scale(1);
 }
+/* Media Transition*/
+.media-transition {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.media-transition.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Email Transition */
+.email {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  margin-bottom: 70px;
+}
+.email.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 /* Active nav link */
 .active {
@@ -118,16 +190,23 @@ p {
   color: orange;
 }
 
-/* Footer */
-footer {
-  margin-top: 100px;
-  padding: 20px;
-  background-color: #242424;
-  text-align: center;
+/* footer */
+.footer {
+  background: linear-gradient(to top, black, transparent);
+  padding: 20px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+.footer p {
+  opacity: 0.6;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
 }
