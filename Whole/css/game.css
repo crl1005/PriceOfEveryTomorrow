@@ -3,8 +3,7 @@ body{
 }
 
 
-
-
+/* header */
 .header-nav {
   position: fixed;
   top: 0;
@@ -93,7 +92,18 @@ body{
 
 
 
-/* footer */
+/* body */
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 .footer {
   background: linear-gradient(to top, black, transparent);
