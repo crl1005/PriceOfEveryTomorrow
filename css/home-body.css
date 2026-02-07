@@ -201,7 +201,7 @@
   transition: opacity 1s ease-out, transform 1s ease-out, all 0.3s ease;
 }
 
-.get-now.visible {
+.get-now .visible {
   opacity: 1;
   transform: translateY(0);
 }
