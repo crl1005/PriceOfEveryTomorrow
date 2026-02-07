@@ -134,7 +134,7 @@ body{
   height: 200px;
   display: block;
   object-fit: cover;
-} .background::before{
+} .background-img::before{
   content:"";
   background: linear-gradient(to bottom, black, transparent);
   position: absolute;
@@ -144,23 +144,112 @@ body{
   height: 100px;
   pointer-events: none;
   z-index: 1;
-} .background::after{
+} .background-img::after{
   content:"";
   background: linear-gradient(to top, black, transparent);
   position:absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height:20px; 
+  height: 150px; 
   pointer-events: none;
   z-index: 1;
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 35px;
+  margin-bottom:300px;
+  padding-top: 10%;
+} .content-header{
+  width: 45%;
+  text-align: center; 
+  margin: 0;
+  font-family: Orbitron;
+} .content-paragraph{
+  width: 35%;
+  text-align: center;
+  color: rgb(236, 173, 0);
+  font-family: inter 400;
+}
 
+.main-content{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about{
+  color:  rgb(236, 173, 0);
+  text-transform: uppercase;
+  font-size: 70px;
+  margin: 0;
+}
+.main-paragraph{
+  font-size: 45px;
+  width: 70%;
+}
 
+/*section 3*/
 
+.grid-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20px;
+}
+.left-section-upper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  opacity: 1;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
 
+.left-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.left-arrow{
+  transform: scaleX(-1);
+}
+
+.left-section .middle-text{
+  color: orange;
+  font-size: 60px;
+  text-align: center;
+  width: 350px;
+  font-family: Orbitron;
+  font-weight: bold;
+}
+
+.left-section img{
+  width: 200px;
+  height: auto;
+}
+
+.left-section-below{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;  
+  margin: 0 auto;
+  font-size: 35px;
+  text-align: justify;
+  opacity: 1;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  font-family: Orbitron;
+}
 
 
 
