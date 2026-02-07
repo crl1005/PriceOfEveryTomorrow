@@ -80,15 +80,30 @@
       
   </div>
       <div class="right-section">
-        <img src="" alt="">
+        <img src="img/UI-DESIGN.png" alt="">
       </div>
   
 </div>
 
+<!-- section 4 -->
 
-
-
-
+<div class="header-sec4">
+  <h1>core mechanics</h1>
+</div>
+<div class="box">
+  <div class="box1">
+    <h1>survival</h1>
+    <p>Your hunger decreases each day and drops faster when you travel, work, protest, or fight. Low hunger reduces your health recovery, action efficiency, and chance of success. If hunger reaches zero, you lose health and face higher risks like illness or arrest. You must decide whether to buy overpriced food, scavenge with danger, or endure hunger to save resources for escape or reform.</p>
+  </div>
+  <div class="box2">
+    <h1>action choice</h1>
+    <p>You receive a limited number of action points daily. Every action consumes time, hunger, and sometimes freedom or safety. Some actions provide short term survival while others push long term goals. Your choices trigger consequences that can appear immediately or days later. Each day forces you to choose between staying safe and taking risks to change your future.</p>
+  </div>
+  <div class="box3">
+    <h1>farming</h1>
+    <p> You can plant small gardens or community farms using limited resources. Crops take several days to grow and depend on security and random events. Successful harvests provide food and trade goods. Farming reduces hunger pressure over time but leaves you vulnerable to raids or government seizure. You must decide whether to protect, share, or exploit your food supply.</p>
+  </div>
+</div>
   <!-- footer -->
   <footer class="footer">
 
@@ -98,7 +113,29 @@
 
 </body>
 
-<style>
+<script>
+  const observerOptions = {
+    threshold: 0.2, 
+    rootMargin: '0px 0px -100px 0px'
+  };
 
-</style>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      } else {
+         entry.target.classList.remove('visible');
+        }
+    });
+  }, observerOptions);
+
+  const animatedElements = document.querySelectorAll(
+    '.content, .main-content, .left-section-upper, .left-section-below, .right-section, .header-sec4, .box'
+  );
+
+  animatedElements.forEach(element => {
+    observer.observe(element);
+  });
+</script>
+
 </html>

@@ -16,6 +16,7 @@
   object-fit: cover;
   display: block;
   animation: zoomIn 4.5s ease-out forwards;
+  overflow: hidden;
 } 
 
 .bg::before{
@@ -26,6 +27,7 @@
   background: radial-gradient(circle at 50% 30%, transparent 0%, 
   rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.6) 100%); 
   z-index: 1;
+  overflow: hidden;
 }
 
 @keyframes zoomIn {
@@ -78,7 +80,7 @@
 
 .poet {
   position: absolute;
-  top: 300px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -97,7 +99,7 @@
   color: #e7fdfff5;
   font-size: 30px;
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   border-style: solid;
   border-radius: 50px;
@@ -133,7 +135,7 @@
   color: white;
   font-size: 50px;
   font-family: Orbitron;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   letter-spacing: 8px;
   font-weight: 300;
   text-transform: uppercase;
@@ -201,7 +203,7 @@
   transition: opacity 1s ease-out, transform 1s ease-out, all 0.3s ease;
 }
 
-.get-now .visible {
+.get-now.visible {
   opacity: 1;
   transform: translateY(0);
 }

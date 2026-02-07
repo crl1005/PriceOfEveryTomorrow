@@ -98,16 +98,16 @@ p {
   transform: scale(0.9);
 }
 button{
-   border: 10px solid #ffffff;
-   background-color: #ffa947;
-   border-radius: 8px;
-   height: 100px;
-   width: 250px;
-   font-size: 30px;
-   font-weight: bolder;
-   color: white;
-   transition: 400ms;
-   cursor: pointer;
+  border: 10px solid #ffffff;
+  background-color: #ffa947;
+  border-radius: 8px;
+  height: 100px;
+  width: 250px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  transition: 400ms;
+  cursor: pointer;
 }
 
 button:hover{
