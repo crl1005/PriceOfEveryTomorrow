@@ -174,3 +174,24 @@
     right: 30px;
   }
 }
+/* Desktop (2K)*/
+@media (min-width: 2560px) {
+  .header-logo {
+    width: 200px;
+  }
+
+  .left-logo {
+    left: 60px;
+  }
+
+  .center-nav {
+    gap: 90px;
+    font-size: 40px;
+  }
+
+  .right-nav {
+    font-size: 35px;
+    padding: 10px 25px;
+    right:60px;
+  }
+}

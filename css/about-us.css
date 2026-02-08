@@ -104,7 +104,6 @@ p {
   font-size: 24px;
 }
 /* Boxes */
-@media screen and (max-width: 1440px){
   .box{
     display: flex;
     flex-direction: row;
@@ -145,4 +144,19 @@ p {
     height: 120px;
     font-family: Inter;
   }
+/* Mobile */
+@media (min-width: 425px) {
+
+
+}
+/* Laptop */
+@media (min-width: 1024px) {
+
+  
+}
+
+/* Desktop (2K) */
+@media (min-width: 2560px) {
+
+
 }
