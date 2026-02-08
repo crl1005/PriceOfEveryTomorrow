@@ -106,7 +106,7 @@
 }
 
 /* Mobile */
-@media (min-width: 435px) {
+@media (min-width: 425px) {
   .header-logo {
     width: 50px;
   }
