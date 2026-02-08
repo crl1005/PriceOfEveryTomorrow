@@ -71,7 +71,7 @@ p {
   align-items: center;
   justify-content: center;
   color: white;
-  font-size: 35px;
+  font-size: 2.4vw;
   margin-bottom:250px;
   padding-top: 5%;
    opacity: 0;
@@ -92,6 +92,8 @@ p {
   color: #ffba69;
   width: 40%;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 .content-paragraph{
