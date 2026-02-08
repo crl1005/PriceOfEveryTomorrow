@@ -91,7 +91,7 @@ body{
 
 
 /* Mobile */
-@media (min-width: 360px) {
+@media (min-width: 320px) and (max-width: 700px) {
   .header-logo {
     width: 50px;
   }
@@ -383,7 +383,7 @@ p {
 }
 
 /* mobile */
-@media (min-width: 425px) {
+@media (min-width: 320px) and (max-width: 700px){
   .background-img img {
     height: 300px;
   }
@@ -493,7 +493,7 @@ p {
 }
 
 /* laptop */
-@media (min-width: 1024px) {
+@media (min-width: 701px) and (max-width: 2559px) {
   .background-img img {
     height: 450px;
   }
@@ -599,7 +599,7 @@ p {
 }
 
 /* desktop */
-@media (min-width: 2560px) {
+@media (min-width: 2560px) and (max-width:3000px) {
   .background-img img {
     height: 650px;
   }
