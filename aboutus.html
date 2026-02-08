@@ -84,8 +84,29 @@ Our Goal</p>
   </footer>
 
 </body>
-
-<style>
-
-</style>
 </html>
+<script>
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 100 &&
+      rect.bottom >= 0
+    );
+  }
+
+  function handleScrollAnimations() {
+    const animatedElements = document.querySelectorAll('.box, h1, .content, .media-transition, .email, .icons');
+    
+    animatedElements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('visible');
+      } else {
+        element.classList.remove('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', handleScrollAnimations);
+  window.addEventListener('load', handleScrollAnimations);
+  handleScrollAnimations();
+</script>

@@ -89,8 +89,14 @@ p {
   font-size: 35px;
   margin-bottom:250px;
   padding-top: 5%;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
-
+.content.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
 .content-header{
   width: 45%;
   text-align: center; 
