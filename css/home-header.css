@@ -106,7 +106,7 @@
 }
 
 /* Mobile */
-@media (min-width: 425px) {
+@media (min-width: 360px) {
   .header-logo {
     width: 50px;
   }
@@ -127,8 +127,8 @@
   }
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* laptop */
+@media (min-width: 1024px) {
   .header-logo {
     width: 70px;
   }
