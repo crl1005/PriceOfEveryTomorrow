@@ -42,6 +42,68 @@ p {
   color: white;
   text-align: center;
 }
+/*Background*/
+.background-img{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: black;
+}
+
+.background-img img{
+  width: 100%;
+  height: 350px;
+  display: block;
+  object-fit: cover;
+} 
+
+.background-img::before{
+  content:"";
+  background: linear-gradient(to bottom, black, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  pointer-events: none;
+  z-index: 1;
+} 
+
+.background-img::after{
+  content:"";
+  background: linear-gradient(to top, black, transparent);
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; 
+  pointer-events: none;
+  z-index: 1;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 35px;
+  margin-bottom:250px;
+  padding-top: 5%;
+}
+
+.content-header{
+  width: 45%;
+  text-align: center; 
+  margin: 0;
+  font-family: Orbitron;
+} 
+
+.content-paragraph{
+  width: 45%;
+  text-align: center;
+  color: #ffba69;
+  font-family: inter 400;
+}
 /* Line Image */
 .line-img {
   align-items: center;
