@@ -235,6 +235,7 @@ button:active{
   font-size: 23px;
   color: white;
   text-align: center;
+  margin-bottom: 200px;
 }
 
 
@@ -250,17 +251,17 @@ button:active{
   background: linear-gradient(to top, black, transparent);
   padding: 20px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+    position: fixed;
+  width: 80%;
   background-color: black;
   z-index: 100;
 }
 
 .footer p {
   opacity: 0.6;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 1px;
   color: white;
   display: flex;
@@ -275,7 +276,7 @@ p {
   align-items: center;
 }
 /* Mobile */
-@media (min-width: 320px) and (max-width: 700px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .background-img img {
     height: 300px;
   }
@@ -332,7 +333,7 @@ p {
   flex-direction: column;
   text-align: center;
   height: auto;
-  width: 240px;
+  width: 230px;
   border-radius: 10px;
   border: 10px solid #ffa947;
   color: white;
@@ -357,7 +358,7 @@ button{
 /*Tip*/
 .tip {
   color: #ffa947 !important;
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 900;
   text-align: center;
 }
@@ -458,7 +459,7 @@ p {
 
 
 /* Laptop */
-@media (min-width: 701px) and (max-width: 2559px)  {
+@media (min-width: 769px) and (max-width: 2559px)  {
 .content{
   display: flex;
   flex-direction: column;
@@ -487,7 +488,7 @@ p {
 .box {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   margin: 50px 0;
@@ -760,10 +761,11 @@ button{
 }
 
 .email p {
-  height: 10px;
+  height: 25px;
   font-size: 55px;
   color: white;
   text-align: center;
+  margin-bottom: 380px;
 }
 /* footer */
 .footer {
