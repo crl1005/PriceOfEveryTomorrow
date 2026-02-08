@@ -72,7 +72,7 @@ p {
   justify-content: center;
   color: white;
   font-size: 2.4vw;
-  margin-bottom:250px;
+  margin-bottom:80px;
   padding-top: 5%;
    opacity: 0;
   transform: translateY(50px);
@@ -94,89 +94,55 @@ p {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
+  font-size: 30px;
 }
 
 .content-paragraph{
   width: 60%;
   text-align: center;
   font-family: inter 400;
+  font-size: 24px;
 }
-/* */
-.relative {
-  position: relative;
-  top: -450px;
-}  .relative:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background: linear-gradient(to top, transparent, black);
-    pointer-events: none;
-    }
-
-.relative:after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(to bottom, transparent, black);
-    pointer-events: none;
-    }
-
-.poet {
-  position: absolute;
-  top: 400px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.poet .poet-img {
-  width: 800px;
-  max-width: 90vw;
-  height: auto;
-}
-
-.bg .body-bg {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-.page-header {
-  position: absolute;
-  bottom: -380px;
-  right: 280px;
-  left: 280px;
-}
-.page-header h1 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: -2%;
-  line-height: 100%;
-  font-size: 50px;
-}
-.page-header h2 {
-  color: #ffba69;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: -1.5%;
-  line-height: 110%;
-}
-.page-header p {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: default;
-  line-height: 150%;
-  font-family: 'Orbitron';
+/* Boxes */
+@media screen and (max-width: 1440px){
+  .box{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  .box.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .individual-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    width: 330px;
+    border-radius: 10px;
+    color: white;
+    transition: 400ms;
+    margin-bottom: 150px;
+  }
+  .tip{
+    color: #ffba69;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Inter;
+  }
+  .second-text{
+    font-size: 20px;
+    text-align: left;
+    height: 120px;
+    font-family: Inter;
+  }
 }

@@ -53,7 +53,7 @@ body {
   justify-content: center;
   color: white;
   font-size: 2.4vw;
-  margin-bottom:250px;
+  margin-bottom:200px;
   padding-top: 5%;
   opacity: 0;
   transform: translateY(50px);
@@ -176,6 +176,7 @@ button:active{
   align-items: center;
   text-align: center;
   justify-content: center;
+  margin-bottom: 80px;
   gap: 80px;
   opacity: 0;
   transform: translateY(50px);
@@ -213,6 +214,13 @@ button:active{
   opacity: 1;
   transform: translateY(0);
 }
+.media-transition h3{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 35px;
+}
 /* Email Transition */
 .email {
   opacity: 0;
@@ -225,16 +233,15 @@ button:active{
   transform: translateY(0);
 }
 .email h4 {
+  height: 5px;
   color: #ffa947;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 5px;
-  font-size: 2vw;
+  font-size: 30px;
 }
 
 .email p {
-  margin-top: 5px;
-  font-size: 1.5vw;
+  height: 10px;
+  font-size: 23px;
   color: white;
   text-align: center;
 }
