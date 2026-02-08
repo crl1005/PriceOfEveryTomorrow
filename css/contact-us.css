@@ -273,8 +273,16 @@ p {
 }
 /* Mobile */
 @media (min-width: 320px) and (max-width: 700px) {
-  .background-img {
-    width: 500px;
+  .background-img img {
+    height: 300px;
+  }
+
+  .background-img::before {
+    height: 80px;
+  }
+
+  .background-img::after {
+    height: 120px;
   }
 .content{
   display: flex;
@@ -321,7 +329,7 @@ p {
   flex-direction: column;
   text-align: center;
   height: auto;
-  width: 260px;
+  width: 240px;
   border-radius: 10px;
   border: 10px solid #ffa947;
   color: white;
@@ -356,7 +364,7 @@ button{
   font-size: 18px;
   line-height: 1.5;
   padding: 20px;
-  height: 220px;
+  height: 240px;
 }
 
 /* Media icons */
@@ -422,7 +430,7 @@ button{
 
 .footer p {
   opacity: 0.6;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 1px;
 }
 
@@ -431,7 +439,7 @@ button{
   left: 0;
   width: 100%;
   background-color: black;
-  z-index: 100;
+    z-index: 100;
 }
 p {
   color: white;
