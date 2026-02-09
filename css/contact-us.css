@@ -108,6 +108,7 @@ body {
   border: 5px solid #ffa947;
   color: white;
   transition: 400ms;
+  font-family: Orbitron;
   padding: 20px;
 }
 .feedback .tip{
@@ -121,6 +122,7 @@ body {
   transform: scale(0.9);
 }
 button{
+  font-family: Orbitron;
   border: 5px solid #ffffff;
   background-color: #ffa947;
   border-radius: 8px;
@@ -289,14 +291,14 @@ button{
 }
 /*Tip*/
 .tip {
-  font-size: 35px;
+  font-size: 31px;
 }
 
 /* Second text */
 .second-text {
   font-size: 18px;
   line-height: 1.5;
-  height: 240px;
+  height: 280px;
 }
 
 /* Media icons */
@@ -363,13 +365,13 @@ button{
 }
 /*Tip*/
 .tip {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 /* Second text */
 .second-text {
   font-size: 16px;
-  height: 260px;
+  height: 300px;
 }
 
 /* Media icons */
@@ -436,13 +438,13 @@ button{
 }
 /*Tip*/
 .tip {
-  font-size: 40px;
+  font-size: 37px;
 }
 
 /* Second text */
 .second-text {
   font-size: 20px;
-  height: 220px;
+  height: 240px;
 }
 
 /* Media icons */
@@ -511,7 +513,7 @@ button{
 }
 /*Tip*/
 .tip {
-  font-size: 80px;
+  font-size: 73px;
 }
 
 /* Second text */
