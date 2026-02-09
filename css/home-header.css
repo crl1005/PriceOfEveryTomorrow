@@ -116,11 +116,16 @@
   padding: 10px;
   background: none;
   border: none;
+  outlsine: none;
   z-index: 600;
   position: absolute;
   left: 15px;
   width: 40px;
   height: 40px;
+} 
+.hamburger:focus{
+  outline: none;
+  border: none;
 }
 
 .hamburger span {
