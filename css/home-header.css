@@ -55,6 +55,7 @@
   position: relative;
 }
 
+
 .center-nav a::after {
   content: '';
   position: absolute;
@@ -69,6 +70,7 @@
 .center-nav a:hover::after {
   width: 100%;
 }
+*/
 
 .center-nav a:hover {
   color: rgb(238, 171, 47);
@@ -105,27 +107,102 @@
   color: orange;
 }
 
+/* Hamburger Button Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 5px;
+  background: none;
+  border: none;
+  z-index: 600;
+  position: absolute;
+  left: 15px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(243, 183, 70);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+  display: block;
+}
+
+.hamburger .center-nav{
+  text-decoration: none;
+}
+
+/* When button has 'active' class, animate to X */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
 /* Mobile */
 @media (min-width: 320px) and (max-width: 700px) {
   .header-logo {
-    width: 50px;
-    opacity: 0;
+    display: none;
   }
 
   .left-logo {
-    left: 15px;
-    opacity: 0;
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .center-nav {
-    gap: 18px;
-    font-size: 12px;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: auto;
+    background-color: rgba(43, 42, 42, 0.98);
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    transition: left 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  
+  .center-nav.active {
+    left: 0;
+  }
+
+  .center-nav a {
+    padding: 15px 30px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+  }
+
+  .center-nav a::after {
+    display: none;
+    text-decoration: none;
+  }
+
+  .center-nav a:hover {
+    background-color: rgba(243, 183, 70, 0.1);
+    transform: translateY(0);
   }
 
   .right-nav {
     font-size: 8px;
     padding: 7px 14px;
-    right: 10px;
+    right: 15px;
   }
 }
 
