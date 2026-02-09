@@ -114,6 +114,7 @@
   cursor: pointer;
   gap: 5px;
   padding: 5px;
+  padding-right: 100px;
   background: none;
   border: none;
   z-index: 600;
