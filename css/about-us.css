@@ -135,6 +135,7 @@ p {
     text-align: left;
     height: 120px;
     font-family: Inter;
+    line-height: 150%;
   }
 /* Mobile */
 @media (min-width: 320px) and (max-width: 700px) {
@@ -174,7 +175,7 @@ p {
   }
   .individual-box{
     height: 100px;
-    width: 80%;
+    width: 85%;
     border-radius: 10px;
   }
   .tip{
@@ -183,7 +184,7 @@ p {
   .second-text{
     font-size: 18px;
     text-align: left;
-    height: 100px;
+    height: 150px;
     margin-bottom: 10px;
   }
   #last-text{
@@ -223,6 +224,7 @@ p {
   }
   .tip{
     font-size: 30px;
+    margin-bottom: 50px;
   }
   .second-text{
     font-size: 18px;
@@ -264,7 +266,7 @@ p {
   .second-text{
     font-size: 1.8vw;
     text-align: left;
-    height: 140px;
+    height: 180px;
   }
 }
 
