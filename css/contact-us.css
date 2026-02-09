@@ -6,8 +6,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-/* Header styles */
-
 /*Background*/
 .background-img{
   margin: 0;
@@ -452,11 +450,6 @@ p {
   align-items: center;
 }
 }
-
-
-
-
-
 
 /* Laptop */
 @media (min-width: 769px) and (max-width: 2559px)  {
