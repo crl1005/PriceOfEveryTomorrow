@@ -254,7 +254,7 @@ p {
   .individual-box{
     flex-direction: column;
     height: auto;
-    width: 25%;
+    width: 30%;
     margin-bottom: 180px;
   }
   .tip{
@@ -290,12 +290,12 @@ p {
 }
 .box{
     flex-direction: row;
-    gap: 200px;
+    gap: 160px;
   }
   .individual-box{
     flex-direction: column;
     height: auto;
-    width: 30%;
+    width: 25%;
     margin-bottom: 300px;
   }
   .tip{

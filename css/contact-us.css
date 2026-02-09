@@ -327,6 +327,7 @@ button{
   font-size: 20px;
 }
 }
+
 /* Laptop and Tablet */
 @media (min-width: 701px) and (max-width: 1023px) {
 .content{
@@ -352,7 +353,7 @@ button{
   width: 200px;
 }
 .feedback .tip{
-  height: 39px;
+  height: 10px;
 }
 button{
   height: 60px;
@@ -367,7 +368,7 @@ button{
 /* Second text */
 .second-text {
   font-size: 16px;
-  height: 280px;
+  height: 260px;
 }
 
 /* Media icons */
@@ -376,8 +377,8 @@ button{
   gap: 60px;
 }
 .media-icons {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 }
 /* Media Transition*/
 .media-transition h3{
