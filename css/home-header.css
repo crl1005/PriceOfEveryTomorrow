@@ -164,7 +164,7 @@
 
 .footer p {
   opacity: 0.6;
-  font-size: 12px;
+  font-size: 12px;;
   letter-spacing: 1px;
   color: white;
   display: flex;
@@ -240,13 +240,13 @@ p {
     right: 15px;
   }
   .footer p {
-    font-size: 8px;
+  font-size: 8px;
   }
 }
 
 /* Laptop */
 @media (min-width: 701px) and (max-width: 1023px) {
-  .header-logo {
+  .header-logo {  
     width: 60px;
   }
 
@@ -269,7 +269,7 @@ p {
     right: 18px;
   }
   .footer p {
-    font-size: 17px;
+  font-size: 12px;
   }
 }
 
@@ -297,6 +297,9 @@ p {
     padding: 8px 20px;
     right: 20px;
   }
+  .footer p {
+  font-size: 14px;
+  }
 }
 
 /* Desktop */
@@ -319,6 +322,9 @@ p {
     padding: 10px 25px;
     right: 30px;
   }
+  .footer p {
+    font-size: 20px;
+  }
 }
 
 /* Desktop */
@@ -340,5 +346,8 @@ p {
     font-size: 35px;
     padding: 10px 25px;
     right: 60px;
+  }
+  .footer p {
+  font-size: 30px;
   }
 }
