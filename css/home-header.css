@@ -128,7 +128,6 @@
   transition: all 0.3s ease;
   border-radius: 2px;
   display: block;
-  le
 }
 
 .hamburger.active span:nth-child(1) {
@@ -157,9 +156,6 @@
     display: flex;
   }
 
-  .hamburger span{
-    margin: 100px;
-  }
   .center-nav {
     position: fixed;
     top: 60px;
