@@ -149,6 +149,36 @@
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
+/* Footer */
+.footer {
+  background: linear-gradient(to top, black, transparent);
+  padding: 20px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 100;
+}
+
+.footer p {
+  opacity: 0.6;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 /* Mobile */
 @media (min-width: 320px) and (max-width: 700px) {
   .header-logo {
@@ -209,6 +239,9 @@
     padding: 7px 14px;
     right: 15px;
   }
+  .footer p {
+    font-size: 8px;
+  }
 }
 
 /* Laptop */
@@ -234,6 +267,9 @@
     font-size: 11px;
     padding: 7px 16px;
     right: 18px;
+  }
+  .footer p {
+    font-size: 17px;
   }
 }
 
