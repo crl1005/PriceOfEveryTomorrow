@@ -130,11 +130,6 @@
   display: block;
 }
 
-.hamburger .center-nav{
-  text-decoration: none;
-}
-
-/* When button has 'active' class, animate to X */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(8px, 8px);
 }

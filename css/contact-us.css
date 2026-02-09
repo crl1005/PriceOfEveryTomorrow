@@ -106,7 +106,7 @@ body {
   height: auto;
   width: 300px;
   border-radius: 10px;
-  border: 10px solid #ffa947;
+  border: 1px solid #ffa947;
   color: white;
   transition: 400ms;
   padding: 20px;
@@ -122,7 +122,7 @@ body {
   transform: scale(0.9);
 }
 button{
-  border: 10px solid #ffffff;
+  border: 1px solid #ffffff;
   background-color: #ffa947;
   border-radius: 8px;
   height: 100px;
@@ -137,7 +137,7 @@ button{
 button:hover{
   transform: scale(1.05);
   background-color: #ffffff;
-  border: 8px solid #ffa947;
+  border: 1px solid #ffa947;
   color: #ffa947;
 
 }
@@ -335,7 +335,7 @@ p {
   height: auto;
   width: 230px;
   border-radius: 10px;
-  border: 10px solid #ffa947;
+  border: 1px solid #ffa947;
   color: white;
   transition: 400ms;
   padding: 20px;
@@ -344,7 +344,7 @@ p {
   height: 30px;
 }
 button{
-  border: 10px solid #ffffff;
+  border: 1px solid #ffffff;
   background-color: #ffa947;
   border-radius: 8px;
   height: 70px;
@@ -507,7 +507,7 @@ p {
   height: auto;
   width: 280px;
   border-radius: 10px;
-  border: 10px solid #ffa947;
+  border: 1px solid #ffa947;
   color: white;
   transition: 400ms;
   padding: 20px;
@@ -516,7 +516,7 @@ p {
   height: 48px;
 }
 button{
-  border: 10px solid #ffffff;
+  border: 1px solid #ffffff;
   background-color: #ffa947;
   border-radius: 8px;
   height: 80px;
@@ -676,7 +676,7 @@ p {
   height: auto;
   width: 600px;
   border-radius: 10px;
-  border: 10px solid #ffa947;
+  border: 1px solid #ffa947;
   color: white;
   transition: 400ms;
   padding: 20px;
@@ -685,7 +685,7 @@ p {
   height: 100px;
 }
 button{
-  border: 10px solid #ffffff;
+  border: 1px solid #ffffff;
   background-color: #ffa947;
   border-radius: 8px;
   height: 150px;
