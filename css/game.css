@@ -214,35 +214,6 @@ body{
   font-size: 30px;
 }
 
-/* footer */
-.footer {
-  background: linear-gradient(to top, black, transparent);
-  padding: 20px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: black;
-  z-index: 100;
-}
-
-.footer p {
-  opacity: 0.6;
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-p {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 700px) {
@@ -364,11 +335,6 @@ p {
 
   .box p {
     font-size: 16px;
-  }
-
-
-  .footer p {
-    font-size: 11px;
   }
 }
 
@@ -747,10 +713,6 @@ p {
   .box p {
     font-size: 32px;
   }
-
-  .footer p {
-    font-size: 14px;
-  }
 }
 
 /* Desktop */
@@ -872,9 +834,5 @@ p {
 
   .box p {
     font-size: 36px;
-  }
-
-  .footer p {
-    font-size: 16px;
   }
 }
