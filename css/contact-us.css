@@ -244,7 +244,7 @@ button:active{
   color: orange;
 }
 /* Mobile */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 700px) {
   .background-img img {
     height: 300px;
   }
@@ -326,29 +326,96 @@ button{
   height: 10px;
   font-size: 20px;
 }
-/* footer */
+}
+/* Laptop and Tablet */
+@media (min-width: 701px) and (max-width: 1023px) {
+.content{
+  flex-direction: column;
+  font-size: 30px;
+  margin-bottom:100px;
+}
+.content-header{
+  width: 65%;
+} 
+.content-paragraph{
+  width: 65%;
+}
+.box {
+  flex-direction: row;
+  gap: 20px;
+  margin: 50px 0;
+}
 
-.footer p {
-  font-size: 11px;
+/* Individual box - FIXED */
+.box > div {
+  flex-direction: column;
+  width: 200px;
+}
+.feedback .tip{
+  height: 39px;
+}
+button{
+  height: 60px;
+  width: 180px;
+  font-size: 25px;
+}
+/*Tip*/
+.tip {
+  font-size: 30px;
+}
+
+/* Second text */
+.second-text {
+  font-size: 16px;
+  height: 280px;
+}
+
+/* Media icons */
+.icons {
+  margin-bottom: 100px;
+  gap: 60px;
+}
+.media-icons {
+  width: 60px;
+  height: 60px;
+}
+/* Media Transition*/
+.media-transition h3{
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 30px;
+}
+/* Email Transition */
+.email {
+  margin-bottom: 70px;
+}
+.email h4 {
+  height: 5px;
+  font-size: 30px;
+}
+
+.email p {
+  height: 10px;
+  font-size: 25px;
 }
 }
 
 /* Laptop */
-@media (min-width: 769px) and (max-width: 2559px)  {
+@media (min-width: 1024px) and (max-width: 1919px) {
 .content{
   flex-direction: column;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom:100px;
 }
 .content-header{
-  width: 45%;
+  width: 60%;
 } 
 .content-paragraph{
-  width: 45%;
+  width: 60%;
 }
 .box {
   flex-direction: row;
-  gap: 30px;
+  gap: 20px;
   margin: 50px 0;
 }
 
@@ -404,17 +471,10 @@ button{
   height: 10px;
   font-size: 25px;
 }
-/* footer */
-
-.footer p {
-  font-size: 12px;
-}
 }
 
-
-
-/* Desktop (2K) */
-@media (min-width: 2560px) and (max-width: 3000px) {
+/* Desktop */
+@media (min-width: 1920px) and (max-width: 2560px) {
 .content{
   flex-direction: column;
   font-size: 55px;
@@ -486,10 +546,5 @@ button{
   height: 25px;
   font-size: 55px;
   margin-bottom: 380px;
-}
-/* footer */
-
-.footer p {
-  font-size: 30px;
 }
 }
