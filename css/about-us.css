@@ -92,6 +92,7 @@ p {
   text-align: center;
   font-family: inter 400;
   font-size: 24px;
+  line-height: 130%;
 }
 /* Boxes */
   .box{
@@ -135,7 +136,7 @@ p {
     font-family: Inter;
   }
 /* Mobile */
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 700px) {
 .background-img img {
     height: 300px;
   }
@@ -191,8 +192,45 @@ p {
     height: 140px;
   }
 }
+/* Laptop And Tablet */
+@media (min-width: 701px) and (max-width: 1023px) {
+  .content{
+  flex-direction: column;
+  font-size: 30px;
+  margin-bottom:100px;
+} 
+.content-header{
+  width: 65%;
+}
+.content-subheader{
+  width: 65%;
+  font-size: 35px;
+}
+.content-paragraph{
+  width: 70%;
+  font-size: 24px;
+}
+.box{
+    flex-direction: row;
+    gap: 20px;
+  }
+  .individual-box{
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+    margin-bottom: 180px;
+  }
+  .tip{
+    font-size: 30px;
+  }
+  .second-text{
+    font-size: 18px;
+    text-align: left;
+    height: 180px;
+  }
+}
 /* Laptop */
-@media (min-width: 769px) and (max-width: 2559px)  {
+@media (min-width: 1024px) and (max-width: 1919px) {
 .content{
   flex-direction: column;
   font-size: 35px;
@@ -206,17 +244,17 @@ p {
   font-size: 35px;
 }
 .content-paragraph{
-  width: 60%;
+  width: 75%;
   font-size: 28px;
 }
 .box{
     flex-direction: row;
-    gap: 35px;
+    gap: 25px;
   }
   .individual-box{
     flex-direction: column;
     height: auto;
-    width: 30%;
+    width: 25%;
     margin-bottom: 180px;
   }
   .tip{
@@ -230,10 +268,10 @@ p {
 }
 
 /* Desktop (2K) */
-@media (min-width: 2560px) and (max-width: 3000px) {
+@media (min-width: 1920px) and (max-width: 2560px) {
 .content{
   flex-direction: column;
-  font-size: 55px;
+  font-size: 50px;
   margin-bottom:200px;
 }
 .content-header{
@@ -257,7 +295,7 @@ p {
   .individual-box{
     flex-direction: column;
     height: auto;
-    width: 600px;
+    width: 30%;
     margin-bottom: 300px;
   }
   .tip{
