@@ -89,59 +89,6 @@ body{
   color: orange;
 }
 
-
-/* Mobile */
-@media (min-width: 320px) and (max-width: 700px) {
-  .header-logo {
-    width: 50px;
-  }
-
-  .left-logo {
-    left: 15px;
-  }
-
-  .center-nav {
-    gap: 18px;
-    font-size: 12px;
-  }
-}
-
-/* laptop */
-@media (min-width: 1024px) {
-  .header-logo {
-    width: 70px;
-  }
-
-  .left-logo {
-    left: 20px;
-  }
-
-  .center-nav {
-    gap: 30px;
-    font-size: 14px;
-  }
-
-  .center-nav a {
-    letter-spacing: 1px;
-  }
-}
-
-/* Desktop */
-@media (min-width: 1024px) {
-  .header-logo {
-    width: 80px;
-  }
-
-  .left-logo {
-    left: 30px;
-  }
-
-  .center-nav {
-    gap: 40px;
-    font-size: 16px;
-  }
-}
-
 /* body */
 
 .background-img{
@@ -306,8 +253,6 @@ body{
   border-radius: 25%;
 }
 
-
-
 /* section4 */
 
 .header-sec4{
@@ -382,8 +327,22 @@ p {
   align-items: center;
 }
 
-/* mobile */
-@media (min-width: 320px) and (max-width: 700px){
+/* Mobile */
+@media (min-width: 320px) and (max-width: 700px) {
+  .header-logo {
+    width: 50px;
+  }
+
+  .left-logo {
+    left: 15px;
+  }
+
+  .center-nav {
+    gap: 18px;
+    font-size: 12px;
+  }
+
+
   .background-img img {
     height: 300px;
   }
@@ -395,6 +354,7 @@ p {
   .background-img::after {
     height: 120px;
   }
+
 
   .content {
     font-size: 28px;
@@ -421,6 +381,7 @@ p {
     width: 90%;
     text-align: center;
   }
+
 
   .grid-layout {
     grid-template-columns: 1fr;
@@ -462,6 +423,7 @@ p {
     height: auto;
   }
 
+
   .header-sec4 {
     margin-top: 50px;
     font-size: 20px;
@@ -487,13 +449,161 @@ p {
     font-size: 16px;
   }
 
+
   .footer p {
     font-size: 11px;
   }
 }
 
-/* laptop */
-@media (min-width: 701px) and (max-width: 2559px) {
+/* Laptop */
+@media (min-width: 701px) and (max-width: 1023px) {
+
+  .header-logo {
+    width: 60px;
+  }
+
+  .left-logo {
+    left: 18px;
+  }
+
+  .center-nav {
+    gap: 25px;
+    font-size: 13px;
+  }
+
+  .center-nav a {
+    letter-spacing: 0.8px;
+  }
+
+
+  .background-img img {
+    height: 400px;
+  }
+
+  .background-img::before {
+    height: 100px;
+  }
+
+  .background-img::after {
+    height: 160px;
+  }
+
+
+  .content {
+    font-size: 80px;
+    margin-bottom: 200px;
+  }
+
+  .content-header {
+    width: 55%;
+    font-size: 52px;
+  }
+
+  .content-paragraph {
+    width: 45%;
+    font-size: 34px;
+  }
+
+  .about {
+    font-size: 50px;
+  }
+
+  .main-paragraph {
+    font-size: 32px;
+    width: 85%;
+  }
+
+
+  .grid-layout {
+    grid-template-columns: 0.9fr 1.1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 30px;
+    margin-top: 150px;
+  }
+
+  .left-section-upper {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .left-section .middle-text {
+    font-size: 50px;
+    width: 300px;
+  }
+
+  .left-section img {
+    width: 150px;
+  }
+
+  .left-section-below {
+    width: 100%;
+    font-size: 28px;
+    text-align: justify;
+  }
+
+  .right-section {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15%;
+  }
+
+
+  .header-sec4 {
+    margin-top: 12%;
+    font-size: 30px;
+  }
+
+  .box {
+    flex-direction: row;
+    gap: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .box div {
+    padding: 10px 50px;
+  }
+
+  .box h1 {
+    font-size: 28px;
+  }
+
+  .box p {
+    font-size: 22px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 1919px) {
+
+  .header-logo {
+    width: 70px;
+  }
+
+  .left-logo {
+    left: 20px;
+  }
+
+  .center-nav {
+    gap: 30px;
+    font-size: 14px;
+  }
+
+  .center-nav a {
+    letter-spacing: 1px;
+  }
+
+
   .background-img img {
     height: 450px;
   }
@@ -505,6 +615,7 @@ p {
   .background-img::after {
     height: 180px;
   }
+
 
   .content {
     font-size: 100px;
@@ -529,6 +640,7 @@ p {
     font-size: 35px;
     width: 80%;
   }
+
 
   .grid-layout {
     grid-template-columns: 0.8fr 1.2fr;
@@ -573,6 +685,7 @@ p {
     border-radius: 15%;
   }
 
+
   .header-sec4 {
     margin-top: 15%;
     font-size: 35px;
@@ -598,8 +711,148 @@ p {
   }
 }
 
-/* desktop */
-@media (min-width: 2560px) and (max-width:3000px) {
+/* Desktop */
+@media (min-width: 1920px) and (max-width: 2559px) {
+
+  .header-logo {
+    width: 80px;
+  }
+
+  .left-logo {
+    left: 30px;
+  }
+
+  .center-nav {
+    gap: 40px;
+    font-size: 16px;
+  }
+
+
+  .background-img img {
+    height: 550px;
+  }
+
+  .background-img::before {
+    height: 140px;
+  }
+
+  .background-img::after {
+    height: 200px;
+  }
+
+
+  .content {
+    font-size: 120px;
+    margin-bottom: 280px;
+  }
+
+  .content-header {
+    width: 48%;
+    font-size: 62px;
+  }
+
+  .content-paragraph {
+    width: 38%;
+    font-size: 40px;
+  }
+
+  .about {
+    font-size: 75px;
+  }
+
+  .main-paragraph {
+    font-size: 48px;
+    width: 70%;
+  }
+
+
+  .grid-layout {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    margin-top: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .left-section-upper {
+    gap: 80px;
+  }
+
+  .left-section .middle-text {
+    font-size: 70px;
+    width: 450px;
+  }
+
+  .left-section img {
+    width: 240px;
+  }
+
+  .left-section-below {
+    width: 100%;
+    font-size: 38px;
+    line-height: 1.5;
+  }
+
+  .right-section {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right-section img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15%;
+  }
+
+
+  .header-sec4 {
+    font-size: 45px;
+  }
+
+  .box {
+    gap: 100px;
+    margin-right: 60px;
+    margin-left: 60px;
+  }
+
+  .box div {
+    padding: 12px 100px;
+  }
+
+  .box h1 {
+    font-size: 42px;
+  }
+
+  .box p {
+    font-size: 32px;
+  }
+
+  .footer p {
+    font-size: 14px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 2560px) {
+
+  .header-logo {
+    width: 90px;
+  }
+
+  .left-logo {
+    left: 40px;
+  }
+
+  .center-nav {
+    gap: 50px;
+    font-size: 18px;
+  }
+
+
   .background-img img {
     height: 650px;
   }
@@ -612,8 +865,9 @@ p {
     height: 250px;
   }
 
+
   .content {
-    font-size: 60px;
+    font-size: 150px;
     margin-bottom: 300px;
   }
 
@@ -635,6 +889,7 @@ p {
     font-size: 55px;
     width: 65%;
   }
+
 
   .grid-layout {
     grid-template-columns: 0.8fr 1.2fr;
@@ -678,6 +933,7 @@ p {
     height: auto;
     border-radius: 15%;
   }
+
 
   .header-sec4 {
     font-size: 50px;
