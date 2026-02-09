@@ -114,7 +114,6 @@
   cursor: pointer;
   gap: 5px;
   padding: 5px;
-  padding-right: 100px;
   background: none;
   border: none;
   z-index: 600;
@@ -129,7 +128,7 @@
   transition: all 0.3s ease;
   border-radius: 2px;
   display: block;
-  left: 50px;
+  le
 }
 
 .hamburger.active span:nth-child(1) {
@@ -158,6 +157,9 @@
     display: flex;
   }
 
+  .hamburger span{
+    margin: 100px;
+  }
   .center-nav {
     position: fixed;
     top: 60px;
