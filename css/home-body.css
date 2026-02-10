@@ -415,6 +415,7 @@
 
   .section3-header .middle-text {
     font-size: 15px;
+    flex-direction: row;
     width: auto;
   }
 
