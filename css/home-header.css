@@ -177,6 +177,10 @@
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 700px) {
+    .header-nav{
+    padding: 20px 0;
+  }
+
   .header-logo {
     display: none;
   }
@@ -231,7 +235,7 @@
   }
 
   .right-nav {
-    font-size: 8px;
+    font-size: 10px;
     padding: 7px 14px;
     right: 15px;
   }
@@ -244,7 +248,7 @@
 /* Laptop and Tablet*/
 @media (min-width: 701px) and (max-width: 1023px) {
   .header-logo {  
-    width: 60px;
+    width: 100px;
   }
 
   .left-logo {
@@ -253,7 +257,7 @@
 
   .center-nav {
     gap: 25px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .center-nav a {
@@ -261,8 +265,8 @@
   }
 
   .right-nav {
-    font-size: 11px;
-    padding: 7px 16px;
+    font-size: 14px;
+    padding: 6px 16px;
     right: 18px;
   }
   
@@ -273,8 +277,12 @@
 
 /* Desktop */
 @media (min-width: 1024px) and (max-width: 1919px) {
+  .header-nav{
+    padding: 20px 0;
+  }
+
   .header-logo {
-    width: 70px;
+    width:20%
   }
 
   .left-logo {
@@ -291,7 +299,7 @@
   }
 
   .right-nav {
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 20px;
     right: 20px;
   }
@@ -304,7 +312,7 @@
 /* Desktop */
 @media (min-width: 1920px) and (max-width: 2559px) {
   .header-logo {
-    width: 80px;
+    width: 200px; 
   }
 
   .left-logo {
@@ -313,11 +321,11 @@
 
   .center-nav {
     gap: 40px;
-    font-size: 16px;
+    font-size: 30px;
   }
 
   .right-nav {
-    font-size: 14px;
+    font-size: 28px;
     padding: 10px 25px;
     right: 30px;
   }
@@ -329,8 +337,11 @@
 
 /* Desktop */
 @media (min-width: 2560px) {
+  .header-nav{
+    padding: 35px 0;
+  }
   .header-logo {
-    width: 120px;
+    width: 230px;
   }
 
   .left-logo {
@@ -339,11 +350,11 @@
 
   .center-nav {
     gap: 90px;
-    font-size: 28px;
+    font-size: 33px;
   }
 
   .right-nav {
-    font-size: 24px;
+    font-size: 35px;
     padding: 12px 30px;
     right: 60px;
   }
