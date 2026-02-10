@@ -409,12 +409,12 @@
 
   .section3-header {
     flex-direction: row;
-    gap: 5px;
-    padding-right: 5px;
+    gap: 10px;
+    padding-right: 10px;
   }
 
   .section3-header .middle-text {
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
   }
 
