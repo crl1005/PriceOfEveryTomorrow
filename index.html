@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/home-general.css">
   <link rel="stylesheet" href="css/home-header.css">
   <link rel="stylesheet" href="css/home-body.css">
+  <link rel="stylesheet" href="css/loading.css">
 
   <!-- fonts -->
   <!-- horizon alternative -->
@@ -18,6 +19,17 @@
 
 </head>
 <body>
+<!-- Loading Screen -->
+<div class="loading-screen">
+  <div class="loading-content">
+    <img src="img/logo.png" class="loading-logo">
+    <div class="loading-text">LOADING</div>
+    <div class="loading-bar">
+      <div class="loading-progress"></div>
+    </div>
+  </div>
+</div>
+
 <!-- header -->
 <header> 
   <nav class="header-nav">
@@ -114,6 +126,38 @@
 </footer>
 
 <script>
+  // Loading Screen
+  window.addEventListener('load', function() {
+    const loadingScreen = document.querySelector('.loading-screen');
+    const loadingProgress = document.querySelector('.loading-progress');
+    
+    // Check the loading screen (one time)
+    if (sessionStorage.getItem('hasSeenLoading') === 'true') {
+      loadingScreen.style.display = 'none';
+      return;
+    }
+    
+    //loading progress
+    let progress = 0;
+    const interval = setInterval(() => {
+      progress += 2;
+      loadingProgress.style.width = progress + '%';
+      
+      if (progress >= 100) {
+        clearInterval(interval);
+        setTimeout(() => {
+          loadingScreen.style.opacity = '0';
+          setTimeout(() => {
+            loadingScreen.style.display = 'none';
+            // Mark that user has seen the loading screen
+            sessionStorage.setItem('hasSeenLoading', 'true');
+          }, 500);
+        }, 300);
+      }
+    }, 30);
+  });
+
+  // Scroll Animations
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
     return (
