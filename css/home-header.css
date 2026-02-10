@@ -40,7 +40,7 @@
 .center-nav {
   display: flex;
   gap: 15px;
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
   font-size: 11px;
   align-items: center;
   justify-content: center;
@@ -49,7 +49,7 @@
 .center-nav a {
   transition: all 0.3s ease;
   white-space: nowrap;
-  text-decoration: none !important;
+  text-decoration: none;
   color: white;
   letter-spacing: 0.5px;
   position: relative;
@@ -83,7 +83,7 @@
   position: absolute;
   right: 10px;
   color: white;
-  font-family: 'Orbitron';
+  font-family: 'Orbitron', sans-serif;
   font-size: 10px;
   font-weight: 600;
   background-color: rgb(243, 183, 70);
@@ -103,6 +103,7 @@
 
 .center-nav .active {
   color: orange;
+  text-decoration: underline;
 }
 
 /* Hamburger Button Styles */
@@ -123,6 +124,7 @@
   width: 40px;
   height: 40px;
 } 
+
 .hamburger:focus{
   outline: none;
   border: none;
@@ -151,14 +153,14 @@
 
 /* Footer */
 .footer {
-  background: linear-gradient(to top, black, transparent);
-  padding: 20px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  text-align: center;
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
-  background-color: black;
   z-index: 100;
 }
 
@@ -167,18 +169,12 @@
   font-size: 12px;
   letter-spacing: 1px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-p {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: Orbitron, sans-serif;
+  margin: 0;
+  display: block;
   text-align: center;
 }
+
 /* Mobile */
 @media (min-width: 320px) and (max-width: 700px) {
   .header-logo {
@@ -218,7 +214,7 @@ p {
     text-align: left;
     font-size: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    text-decoration: none !important;
+    text-decoration: none;
   }
 
   .center-nav a::after {
@@ -239,8 +235,9 @@ p {
     padding: 7px 14px;
     right: 15px;
   }
+  
   .footer p {
-  font-size: 8px;
+    font-size: 8px;
   }
 }
 
@@ -268,8 +265,9 @@ p {
     padding: 7px 16px;
     right: 18px;
   }
+  
   .footer p {
-  font-size: 10px;
+    font-size: 10px;
   }
 }
 
@@ -297,8 +295,9 @@ p {
     padding: 8px 20px;
     right: 20px;
   }
+  
   .footer p {
-  font-size: 11px;
+    font-size: 11px;
   }
 }
 
@@ -322,15 +321,16 @@ p {
     padding: 10px 25px;
     right: 30px;
   }
+  
   .footer p {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
 /* Desktop */
 @media (min-width: 2560px) {
   .header-logo {
-    width: 200px;
+    width: 120px;
   }
 
   .left-logo {
@@ -339,15 +339,16 @@ p {
 
   .center-nav {
     gap: 90px;
-    font-size: 40px;
+    font-size: 28px;
   }
 
   .right-nav {
-    font-size: 35px;
-    padding: 10px 25px;
+    font-size: 24px;
+    padding: 12px 30px;
     right: 60px;
   }
+  
   .footer p {
-  font-size: 23px;
+    font-size: 18px;
   }
 }
