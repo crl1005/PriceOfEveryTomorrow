@@ -409,8 +409,8 @@
 
   .section3-header {
     flex-direction: row;
-    gap: 10px;
-    padding-right: 10px;
+    gap: 5px;
+    padding-right: 5px;
   }
 
   .section3-header .middle-text {
