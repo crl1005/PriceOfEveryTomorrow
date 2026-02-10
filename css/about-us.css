@@ -24,12 +24,24 @@ mark {
 }
 
 .footer {
-  background-color: #1a1a1a;
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
   text-align: center;
   color: white;
   font-family: Orbitron, sans-serif;
   font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer p {
+  margin: 0;
+  opacity: 0.6;
+  letter-spacing: 1px;
 }
 
 /*Background*/
@@ -130,6 +142,7 @@ mark {
   transform: translateY(50px);
   transition: opacity 1s ease-out, transform 1s ease-out;
   padding: 0 20px;
+  margin-bottom: 150px;
 }
 
 .box.visible {
@@ -148,7 +161,6 @@ mark {
   border-radius: 10px;
   color: white;
   transition: 400ms;
-  margin-bottom: 150px;
 }
 
 .tip{
@@ -216,6 +228,7 @@ mark {
     opacity: 0;
     gap: 0;
     padding: 0 20px;
+    margin-bottom: 100px;
   }
   
   .individual-box{
@@ -238,6 +251,10 @@ mark {
   
   #last-text{
     margin-bottom: 100px;
+  }
+  
+  .footer p {
+    font-size: 8px;
   }
 }
 
@@ -275,7 +292,7 @@ mark {
     flex-direction: column;
     min-height: 420px;
     width: calc(33.333% - 15px);
-    margin-bottom: 180px;
+    margin-bottom: 0;
     flex: 0 1 auto;
   }
   
@@ -288,6 +305,10 @@ mark {
     font-size: 16px;
     text-align: left;
     padding-top: 25px;
+  }
+  
+  .footer p {
+    font-size: 10px;
   }
 }
 
@@ -324,7 +345,7 @@ mark {
     flex-direction: column;
     min-height: 450px;
     width: calc(33.333% - 30px);
-    margin-bottom: 180px;
+    margin-bottom: 0;
   }
   
   .tip{
@@ -334,95 +355,20 @@ mark {
   .second-text{
     font-size: 18px;
     text-align: left;
-<<<<<<< HEAD
     padding-top: 30px;
-=======
-    height: 180px;
   }
-}
-/* Laptop */
-@media (min-width: 1024px) and (max-width: 1919px) {
-.content{
-  flex-direction: column;
-  font-size: 35px;
-  margin-bottom:100px;
-} 
-.content-header{
-  width: 45%;
-}
-.content-subheader{
-  width: 45%;
-  font-size: 35px;
-}
-.content-paragraph{
-  width: 75%;
-  font-size: 28px;
-}
-.box{
-    flex-direction: row;
-    gap: 25px;
-  }
-  .individual-box{
-    flex-direction: column;
-    height: auto;
-    width: 30%;
-    margin-bottom: 180px;
-  }
-  .tip{
-    font-size: 2.7vw;
-  }
-  .second-text{
-    font-size: 1.8vw;
-    text-align: left;
-    height: 220px;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
-=======
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
->>>>>>> Stashed changes
+  
+  .footer p {
+    font-size: 11px;
   }
 }
 
 /* Desktop (2K) */
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
 @media (min-width: 1920px) and (max-width: 2559px) {
   .content{
     flex-direction: column;
     font-size: 50px;
     margin-bottom: 200px;
-=======
-=======
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
->>>>>>> Stashed changes
-@media (min-width: 1920px) {
-.content{
-  flex-direction: column;
-  font-size: 50px;
-  margin-bottom:200px;
-}
-.content-header{
-  width: 45%;
-  margin: 0;
-} 
-.content-subheader{
-  width: 40%;
-  margin-top: 0px;
-  margin-bottom: 200px;
-  font-size: 55px;
-}
-.content-paragraph{
-  width: 70%;
-  font-size: 50px;
-}
-.box{
-    flex-direction: row;
-    gap: 160px;
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
   }
   
   .content-header{
@@ -453,34 +399,21 @@ mark {
     flex-direction: column;
     min-height: 550px;
     width: calc(33.333% - 60px);
-    margin-bottom: 300px;
+    margin-bottom: 0;
   }
   
   .tip{
-<<<<<<< HEAD
     font-size: 50px;
-=======
-    font-size: 80px;
-    padding-bottom: 250px;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
-=======
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
->>>>>>> Stashed changes
   }
   
   .second-text{
-<<<<<<< Updated upstream
-    font-size: 44px;
-    text-align: left;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
     font-size: 28px;
     text-align: left;
     padding-top: 40px;
+  }
+  
+  .footer p {
+    font-size: 14px;
   }
 }
 
@@ -520,7 +453,7 @@ mark {
     flex-direction: column;
     min-height: 650px;
     width: calc(33.333% - 70px);
-    margin-bottom: 300px;
+    margin-bottom: 0;
   }
   
   .tip{
@@ -531,14 +464,9 @@ mark {
     font-size: 36px;
     text-align: left;
     padding-top: 50px;
-=======
-    font-size: 44px;
-    text-align: left;
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
-=======
-    font-size: 44px;
-    text-align: left;
->>>>>>> 069a36522ac6528d6f3b4570e7ad810cf6eb3a90
->>>>>>> Stashed changes
+  }
+  
+  .footer p {
+    font-size: 18px;
   }
 }

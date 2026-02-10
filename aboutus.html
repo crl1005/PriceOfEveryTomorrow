@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Price of Every Tomorrow</title>
+  <title>Price of Every Tomorrow - About Us</title>
 
   <!-- files -->
   <link rel="stylesheet" href="css/about-us.css">
   <link rel="stylesheet" href="css/home-header.css">
+  
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
- <header> 
+<header> 
   <nav class="header-nav">
     <div class="header">
       <div class="left-logo">
-        <img class="header-logo" src="img/logo.png" alt="">
+        <img class="header-logo" src="img/logo.png" alt="Logo">
       </div>
 
       <!-- Hamburger Button -->
-      <button class="hamburger" onclick="classList.toggle('active'); 
+      <button class="hamburger" onclick="this.classList.toggle('active'); 
       document.querySelector('.center-nav').classList.toggle('active')">
         <span></span>
         <span></span>
@@ -31,7 +32,7 @@
       
       <div class="center-nav">
         <a href="index.html">Home</a>
-        <a href="game.html" >Game Info</a>
+        <a href="game.html">Game</a>
         <a href="contact.html">Contact</a>
         <a href="aboutus.html" class="active">About us</a>
       </div>
@@ -42,58 +43,48 @@
 </header>
 
 <div class="background-img">
-      <img src="img/body-bg.jpg" alt="">
-    </div>
+  <img src="img/body-bg.jpg" alt="Background">
+</div>
     
-  <div class="content">
-    <h1 class="content-header">ABOUT US</h1>
-    <h3 class="content-subheader">A small team focused on meaningful player decisions.</h3>
-    <div class="content-paragraph">
-      We are a team of Filipino students from <mark>Golden Faith Academy</mark>, passionate about creating games that reflect real issues in the Philippines. Our goal is to combine engaging gameplay with meaningful stories that make players think. We focus on challenges like social unrest, corruption, and everyday struggles, turning them into experiences that entertain and educate. Through our games, we aim to share our perspective, spark discussion, and inspire change.
- <br><br>We believe games can be more than just entertainment. They can teach lessons, raise awareness, and encourage empathy. Every project we create is carefully designed to show the realities of our society while giving players the freedom to make choices and explore consequences. Our team works together to bring creativity, research, and culture into every game we build. We hope our games not only challenge players but also highlight the resilience, diversity, and spirit of the Filipino people.
-    </div>
+<div class="content">
+  <h1 class="content-header">ABOUT US</h1>
+  <h3 class="content-subheader">A small team focused on meaningful player decisions.</h3>
+  <div class="content-paragraph">
+    We are a team of Filipino students from <mark>Golden Faith Academy</mark>, passionate about creating games that reflect real issues in the Philippines. Our goal is to combine engaging gameplay with meaningful stories that make players think. We focus on challenges like social unrest, corruption, and everyday struggles, turning them into experiences that entertain and educate. Through our games, we aim to share our perspective, spark discussion, and inspire change.
+    <br><br>We believe games can be more than just entertainment. They can teach lessons, raise awareness, and encourage empathy. Every project we create is carefully designed to show the realities of our society while giving players the freedom to make choices and explore consequences. Our team works together to bring creativity, research, and culture into every game we build. We hope our games not only challenge players but also highlight the resilience, diversity, and spirit of the Filipino people.
   </div>
-
-<div class="box">
-    <div class="individual-box">
-        <p class="tip">OUR VALUES</p>
-        <p class="second-text">&bull; Creativity and innovation in every project
-<br><br>&bull; Honesty and responsibility in portraying real issues
-<br><br>&bull; Respect for culture and community
-<br><br>&bull; Commitment to quality and meaningful gameplay</p>
-    </div>
-    <div class="individual-box">
-        <p class="tip">OUR PURPOSE</p>
-        <p class="second-text">&bull; To create games that educate, inspire, and engage
-<br><br>&bull; To give players insight into social and cultural issues in the Philippines
-<br><br>&bull; To encourage discussion and reflection through interactive storytelling Our Goal</p>
-    </div>
-    <div class="individual-box" id="last-text">
-        <p class="tip">OUR GOAL</p>
-        <p class="second-text" >&bull; To build a portfolio of games that combine entertainment with social awareness
-<br><br>&bull; To grow as a team while sharing Filipino stories with the world
-<br><br>&bull; To make a positive impact on players and society through meaningful game experiences</p>
-    </div>
 </div>
 
+<div class="box">
+  <div class="individual-box">
+    <p class="tip">OUR VALUES</p>
+    <p class="second-text">&bull; Creativity and innovation in every project
+      <br><br>&bull; Honesty and responsibility in portraying real issues
+      <br><br>&bull; Respect for culture and community
+      <br><br>&bull; Commitment to quality and meaningful gameplay
+    </p>
+  </div>
+  <div class="individual-box">
+    <p class="tip">OUR PURPOSE</p>
+    <p class="second-text">&bull; To create games that educate, inspire, and engage
+      <br><br>&bull; To give players insight into social and cultural issues in the Philippines
+      <br><br>&bull; To encourage discussion and reflection through interactive storytelling
+    </p>
+  </div>
+  <div class="individual-box" id="last-text">
+    <p class="tip">OUR GOAL</p>
+    <p class="second-text">&bull; To build a portfolio of games that combine entertainment with social awareness
+      <br><br>&bull; To grow as a team while sharing Filipino stories with the world
+      <br><br>&bull; To make a positive impact on players and society through meaningful game experiences
+    </p>
+  </div>
+</div>
 
+<footer class="footer">
+  <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
+    &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
+</footer>
 
-
-
-
-
-
-
-
-
-
-  <footer class="footer">
-    <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
-      &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
-  </footer>
-
-</body>
-</html>
 <script>
   function isInViewport(element) {
     const rect = element.getBoundingClientRect();
@@ -119,3 +110,6 @@
   window.addEventListener('load', handleScrollAnimations);
   handleScrollAnimations();
 </script>
+
+</body>
+</html>
