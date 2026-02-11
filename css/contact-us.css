@@ -203,7 +203,8 @@ button:active{
 }
 
 .media-icons:hover {
-  transform: scale(1.1);
+    filter: brightness(0) invert(1) drop-shadow(0 5px 15px rgba(255, 255, 255, 0.5));
+  transform: translateY(-10px) scale(1.1);
 }
 
 .media-icons:active {
