@@ -206,7 +206,7 @@ mark {
   
   .content-header{
     width: 80%;
-    font-size: 32px;
+    font-size: 30px;
   }
   
   .content-subheader{
@@ -214,7 +214,7 @@ mark {
     width: 80%;
     margin-top: 0px;
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 18px;
   }
   
   .content-paragraph{
@@ -268,12 +268,12 @@ mark {
   
   .content-header{
     width: 65%;
-    font-size: 40px;
+    font-size: 50px;
   }
   
   .content-subheader{
     width: 65%;
-    font-size: 28px;
+    font-size: 22px;
   }
   
   .content-paragraph{
@@ -322,12 +322,12 @@ mark {
   
   .content-header{
     width: 45%;
-    font-size: 45px;
+    font-size: 60px;
   }
   
   .content-subheader{
     width: 45%;
-    font-size: 32px;
+    font-size: 25px;
   }
   
   .content-paragraph{
@@ -374,14 +374,14 @@ mark {
   .content-header{
     width: 45%;
     margin: 0;
-    font-size: 60px;
+    font-size: 100px;
   } 
   
   .content-subheader{
     width: 40%;
     margin-top: 0px;
     margin-bottom: 200px;
-    font-size: 45px;
+    font-size: 40px;
   }
   
   .content-paragraph{
@@ -428,7 +428,7 @@ mark {
   .content-header{
     width: 45%;
     margin: 0;
-    font-size: 80px;
+    font-size: 150px;
   } 
   
   .content-subheader{
