@@ -13,9 +13,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
 
   <!-- fonts -->
-  <!-- horizon alternative -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <!-- etna alternative -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
@@ -65,6 +63,7 @@
     <div class="relative">
       <img class="body-bg" src="img/body-bg.jpg" alt="Background">
       <div class="poet">
+        <div class="tagline">Survival is a risk itself</div>
         <img class="poet-img" src="img/logo.png" alt="Game Logo">
       </div>
       <a class="watch-trailer" href="https://youtu.be/MeL6mbqtmCI" target="_blank" rel="noopener noreferrer">WATCH TRAILER</a>
@@ -138,7 +137,7 @@
       return;
     }
     
-    //loading progress
+    // loading progress
     let progress = 0;
     const interval = setInterval(() => {
       progress += 2;
@@ -150,7 +149,6 @@
           loadingScreen.style.opacity = '0';
           setTimeout(() => {
             loadingScreen.style.display = 'none';
-            // Mark that user has seen the loading screen
             sessionStorage.setItem('hasSeenLoading', 'true');
           }, 500);
         }, 300);
