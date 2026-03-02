@@ -257,7 +257,7 @@
   align-items: center;
   flex-wrap: nowrap;
   overflow: hidden;
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
@@ -273,14 +273,14 @@
 
 /*GIFS*/
 .GIF {
-  display: flex;
+  display: block;
   gap: 0px;
   justify-content: center;
-  margin-bottom: 100px;
   height: auto;
   width: 100%;
   margin: 0 auto; 
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  max-width: fit-content;
 }
 
 
@@ -434,7 +434,9 @@
     width: 70px;
     padding-bottom: 40px;
   }
-
+  .GIF {
+    max-width: fit-content;
+  }
   .get-now {
     font-size: 18px;
     padding: 10px 25px;
