@@ -110,7 +110,6 @@
   text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
-
 .poet .poet-img {
   width: 280px;
   max-width: 90vw;
@@ -259,7 +258,7 @@
   flex-wrap: nowrap;
   overflow: hidden;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 
 .line-img img {
@@ -271,6 +270,19 @@
   opacity: 0.9;
   z-index: 1000;
 }
+
+/*GIFS*/
+.GIF {
+  display: flex;
+  gap: 0px;
+  justify-content: center;
+  margin-bottom: 100px;
+  height: auto;
+  width: 100%;
+  margin: 0 auto; 
+  margin-bottom: 60px;
+}
+
 
 /* section 3 */
 .section3-header {
@@ -429,10 +441,6 @@
     margin-bottom: 50px;
   }
 
-  .line-img {
-    margin-bottom: 80px;
-  }
-
   .section3-header {
     flex-direction: row;
     gap: 10px;
@@ -517,10 +525,6 @@
     transform: scale(1.3);
   }
 
-  .line-img {
-    margin-bottom: 150px;
-  }
-
   .section3-header {
     flex-direction: row;
     gap: 10px;
@@ -591,10 +595,7 @@
     margin-bottom: 150px;
   }
 
-  .line-img {
-    margin-bottom: 250px;
-  }
-
+  
   .section3-header {
     gap: 20px;
     margin-bottom: 80px;
