@@ -5,186 +5,212 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Price of Every Tomorrow</title>
 
-  <!-- files -->
-  <link rel="stylesheet" href="css/home-general.css">
-  <link rel="stylesheet" href="css/home-header.css">
   <link rel="stylesheet" href="css/home-body.css">
-  <link rel="stylesheet" href="css/loading.css">
+  <link rel="stylesheet" href="css/home-header.css">
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Loading Screen -->
-<div class="loading-screen">
-  <div class="loading-content">
-    <img src="img/logo.png" class="loading-logo">
-    <div class="loading-text">LOADING</div>
-    <div class="loading-bar">
-      <div class="loading-progress"></div>
-    </div>
-  </div>
-</div>
 
-<!-- header -->
-<header> 
-  <nav class="header-nav">
-    <div class="header">
-      <div class="left-logo">
-        <img class="header-logo" src="img/logo.png" alt="Price of Every Tomorrow Logo">
+  <!-- loading screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <img src="img/logo.png" class="loading-logo" alt="Logo">
+      <div class="loading-label">INITIALIZING</div>
+      <div class="loading-bar">
+        <div class="loading-progress" id="loadFill"></div>
+      </div>
+      <div class="loading-percent" id="loadPct">0%</div>
+    </div>
+    <div class="loading-scanlines"></div>
+    <div class="loading-corner tl"></div>
+    <div class="loading-corner tr"></div>
+    <div class="loading-corner bl"></div>
+    <div class="loading-corner br"></div>
+  </div>
+
+  <!-- header -->
+  <header id="siteHeader">
+    <nav class="header-nav">
+      <div class="header-logo-left">
+        <a class="header-logo-wrap" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="Price of Every Tomorrow">
+        </a>
       </div>
 
-      <!-- Hamburger Button -->
-      <button class="hamburger" onclick="this.classList.toggle('active'); 
-      document.querySelector('.center-nav').classList.toggle('active')">
-        <span></span>
-        <span></span>
-        <span></span>
+      <ul class="center-nav" id="centerNav">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="game.html" class="nav-link">Game Info</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+      </ul>
+
+      <div class="header-logo-right">
+        <a href="#" class="nav-cta">Get Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      
-      <div class="center-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="game.html">Game Info</a>
-        <a href="contact.html">Contact</a>
-        <a href="aboutus.html">About us</a>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section class="hero">
+    <div class="hero-bg-layer">
+      <div class="hero-img-wrap">
+        <img class="hero-bg-img" src="img/body-bg.jpg" alt="Background">
       </div>
-
-      <div class="right-nav">Get Now</div>
+      <div class="hero-grid"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-fade-top"></div>
+      <div class="hero-fade-bottom"></div>
     </div>
-  </nav>
-</header>
 
-<!-- main -->
-<main class="main-body">
-  <div class="bg">
-    <div class="relative">
-      <img class="body-bg" src="img/body-bg.jpg" alt="Background">
-      <div class="poet">
-        <div class="tagline">Survival is a risk itself</div>
-        <img class="poet-img" src="img/logo.png" alt="Game Logo">
+    <div class="hero-content">
+      <span class="hero-eyebrow">A Survival Strategy Experience</span>
+      <div class="hero-logo-wrap">
+        <img class="hero-logo" src="img/logo.png" alt="Price of Every Tomorrow Logo">
       </div>
-      <a class="watch-trailer" href="https://youtu.be/MeL6mbqtmCI" target="_blank" rel="noopener noreferrer">WATCH TRAILER</a>
+      <p class="hero-tagline" data-text="Survival is a risk itself">
+        Survival is a risk itself
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#">Get Now</a>
+        <a class="btn-ghost" href="https://youtu.be/MeL6mbqtmCI" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg>
+          Watch Trailer
+        </a>
+      </div>
     </div>
-  </div>
-</main>
+  </section>
 
-<!-- section 2 -->
-<div class="section-2">
-  <div class="apps-title">AVAILABLE ON</div>
-</div>
+  <!-- platforms section -->
+  <section class="platforms" id="platforms">
+    <div class="section-label-wrap">
+      <span class="section-label">Available On</span>
+    </div>
 
-<div class="apps">
-  <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">
-    <img src="img/steam.png" alt="Steam">
-  </a>
-  <a href="https://www.playstation.com/en-ph/ps5/" target="_blank" rel="noopener noreferrer">
-    <img src="img/playstation-logotype.png" alt="PlayStation">
-  </a>
-  <a href="https://www.xbox.com/en-IN/" target="_blank" rel="noopener noreferrer">
-    <img src="img/xbox-logo.png" alt="Xbox">
-  </a>
-</div>
+    <div class="platform-grid">
+      <a class="platform-card" href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">
+        <img src="img/steam.png" alt="Steam">
+        <span>Steam</span>
+      </a>
+      <a class="platform-card" href="https://www.playstation.com/en-ph/ps5/" target="_blank" rel="noopener noreferrer">
+        <img src="img/playstation-logotype.png" alt="PlayStation">
+        <span>PlayStation 5</span>
+      </a>
+      <a class="platform-card" href="https://www.xbox.com/en-IN/" target="_blank" rel="noopener noreferrer">
+        <img src="img/xbox-logo.png" alt="Xbox">
+        <span>Xbox Series X</span>
+      </a>
+    </div>
 
-<div class="get-now">GET NOW</div>
+    <button class="get-btn reveal">Acquire Now</button>
+  </section>
 
-<div class="line-img">
-  <img src="img/Line.png" alt="Divider Line">
-</div>
-
-<div class="GIFs">
-  <img src="img/IMLAB-GIF1.gif" class="GIF">
-</div>
-
-<!-- section 3 -->  
-<div class="section3-header">
-  <div class="right-arrow">
-    <img src="img/arrow-logo.png" alt="Arrow">
+  <!-- divider -->
+  <div class="section-divider">
+    <div class="divider-line"></div>
+    <span class="divider-text">&#9670; CHOOSE YOUR PATH &#9670;</span>
+    <div class="divider-line"></div>
   </div>
 
-  <div class="middle-text">
-    Choose Your Path
-  </div>
+  <!-- about section -->
+  <section class="about" id="about">
+    <div class="reveal-left">
+      <h2 class="about-title">
+        The World<br>
+        <span class="title-accent">Has Collapsed.</span>
+      </h2>
+      <p class="about-body">
+        A single-player survival strategy game set in a dystopian nation crumbling 
+        under the weight of extreme inflation, political corruption, and social unrest. 
+        You start with nothing but a small stash of resources &mdash; and must navigate a 
+        dangerous world where every choice matters.
+      </p>
+      <a href="game.html" class="btn-ghost mt">Learn More</a>
+    </div>
+  </section>
 
-  <div class="left-arrow">
-    <img src="img/arrow-logo.png" alt="Arrow">
-  </div>
-</div>
-<div class="bottom-text">
-  <p class="paragraph">
-    A single-player survival strategy game set in a 
-    dystopian nation crumbling under the weight of extreme inflation, 
-    political corruption, and social unrest. The player starts with nothing 
-    but a small stash of resources and must navigate a dangerous world where 
-    every choice matters.
-  </p>
-</div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img class="footer-logo" src="img/logo.png" alt="Logo">
+      <p class="footer-copy">
+        &copy; 2026 FETI Entertainment &nbsp;|&nbsp; Privacy &nbsp;|&nbsp; Terms of Use
+        &nbsp;|&nbsp; Built by ESGUERRA &nbsp;|&nbsp; Design by CAMONIAS
+      </p>
+    </div>
+  </footer>
 
+  <script>
+    // loading screen
+    window.addEventListener('load', () => {
+      const screen = document.getElementById('loadingScreen');
+      const fill   = document.getElementById('loadFill');
+      const pct    = document.getElementById('loadPct');
 
-<!-- footer -->
-<footer class="footer">
-  <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
-    &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
-</footer>
+      if (sessionStorage.getItem('seen') === '1') {
+        screen.style.display = 'none'; return;
+      }
 
-<script>
-  // Loading Screen
-  window.addEventListener('load', function() {
-    const loadingScreen = document.querySelector('.loading-screen');
-    const loadingProgress = document.querySelector('.loading-progress');
-    
-    // Check the loading screen (one time)
-    if (sessionStorage.getItem('hasSeenLoading') === 'true') {
-      loadingScreen.style.display = 'none';
-      return;
-    }
-    
-    // loading progress
-    let progress = 0;
-    const interval = setInterval(() => {
-      progress += 2;
-      loadingProgress.style.width = progress + '%';
-      
-      if (progress >= 100) {
-        clearInterval(interval);
-        setTimeout(() => {
-          loadingScreen.style.opacity = '0';
+      let p = 0;
+      const iv = setInterval(() => {
+        p += 1.6;
+        const v = Math.min(Math.round(p), 100);
+        fill.style.width = v + '%';
+        pct.textContent  = v + '%';
+        if (p >= 100) {
+          clearInterval(iv);
           setTimeout(() => {
-            loadingScreen.style.display = 'none';
-            sessionStorage.setItem('hasSeenLoading', 'true');
-          }, 500);
-        }, 300);
-      }
-    }, 30);
-  });
-
-  // Scroll Animations
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 100 &&
-      rect.bottom >= 0
-    );
-  }
-
-  function handleScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.apps-title, .apps, .get-now, .section3-header, .bottom-text');
-    
-    animatedElements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('visible');
-      } else {
-        element.classList.remove('visible');
-      }
+            screen.classList.add('fade-out');
+            setTimeout(() => {
+              screen.style.display = 'none';
+              sessionStorage.setItem('seen', '1');
+            }, 700);
+          }, 300);
+        }
+      }, 22);
     });
-  }
 
-  window.addEventListener('scroll', handleScrollAnimations);
-  window.addEventListener('load', handleScrollAnimations);
-  handleScrollAnimations();
-</script>
+    // header scroll
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
+    });
 
+    // hamburger
+    const ham     = document.getElementById('hamburger');
+    const navList = document.getElementById('centerNav');
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      navList.classList.toggle('open');
+    });
+
+    // section fade in/out based on how much fills the viewport
+    const sections = document.querySelectorAll('.hero, .platforms, .section-divider, .about');
+
+    function updateSections() {
+      const vh = window.innerHeight;
+      sections.forEach(sec => {
+        const r = sec.getBoundingClientRect();
+        const visible = Math.min(r.bottom, vh) - Math.max(r.top, 0);
+        const coverage = visible / vh; // how much of the viewport it fills
+        // fade in when it covers >= 50% of the viewport, fade out otherwise
+        const opacity = coverage >= 0.5 ? 1 : Math.max(0, coverage / 0.5);
+        sec.style.opacity = opacity;
+        sec.style.transform = coverage >= 0.5
+          ? 'translateY(0)'
+          : `translateY(${(1 - opacity) * 24}px)`;
+      });
+    }
+
+    window.addEventListener('scroll', updateSections, { passive: true });
+    window.addEventListener('resize', updateSections);
+    updateSections();
+  </script>
 </body>
 </html>

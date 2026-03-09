@@ -5,149 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Price of Every Tomorrow - Game Info</title>
 
-  <!-- files -->
   <link rel="stylesheet" href="css/game.css">
   <link rel="stylesheet" href="css/home-header.css">
   <link rel="icon" type="image/png" href="favicon.png">
-  
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header> 
-  <nav class="header-nav">
-    <div class="header">
-      <div class="left-logo">
-        <img class="header-logo" src="img/logo.png" alt="Logo">
+  <!-- header -->
+  <header id="siteHeader">
+    <nav class="header-nav">
+      <div class="header-logo-left">
+        <a class="header-logo-wrap" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="Price of Every Tomorrow">
+        </a>
       </div>
 
-      <!-- Hamburger Button -->
-      <button class="hamburger" onclick="this.classList.toggle('active'); 
-      document.querySelector('.center-nav').classList.toggle('active')">
-        <span></span>
-        <span></span>
-        <span></span>
+      <ul class="center-nav" id="centerNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="game.html" class="nav-link active">Game Info</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+      </ul>
+
+      <div class="header-logo-right">
+        <a href="#" class="nav-cta">Get Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      
-      <div class="center-nav">
-        <a href="index.html">Home</a>
-        <a href="game.html" class="active">Game Info</a>
-        <a href="contact.html">Contact</a>
-        <a href="aboutus.html">About us</a>
-      </div>
+    </nav>
+  </header>
 
-      <div class="right-nav">Get Now</div>
+  <!-- hero section -->
+  <section class="game-hero">
+    <div class="game-hero-bg">
+      <img src="img/body-bg.jpg" alt="Background">
     </div>
-  </nav>
-</header>
+    <div class="game-hero-grid"></div>
+    <div class="game-hero-vignette"></div>
+    <div class="game-hero-content">
+      <span class="game-hero-eyebrow">Game Information</span>
+      <h1 class="game-hero-title">The World You<br>Must Endure</h1>
+      <p class="game-hero-sub">Start with limited resources and survive long enough to escape or rebuild a collapsing nation.</p>
+    </div>
+  </section>
 
-<!-- main -->
-<div class="background-img">
-  <img src="img/body-bg.jpg" alt="Background">
-</div>
-    
-<div class="content">
-  <h1 class="content-header">THE WORLD YOU MUST ENDURE</h1>
-  <div class="content-paragraph">
-    Start with limited resources and survive long enough to escape or rebuild a collapsing nation.
-  </div>
-</div>
-
-<!-- Section2 -->
-<div class="main-content">
-  <h2 class="about">about</h2>
-  <div class="main-paragraph">
-    <p>The nation once promised stability and progress. Years of unchecked inflation and corrupt leadership shattered that promise. Money lost its value. Trust disappeared. Streets filled with unrest and quiet fear.
+  <!-- about section -->
+  <section class="game-about">
+    <span class="game-section-label">About</span>
+    <p class="game-about-body">
+      The nation once promised stability and progress. Years of unchecked inflation and corrupt leadership shattered that promise. Money lost its value. Trust disappeared. Streets filled with unrest and quiet fear.
       <br><br>
       You are an ordinary citizen left behind by the system. You begin with a small stash of resources and no protection from the chaos around you. Each day forces you to choose between survival and change. Obey, resist, escape, or rebuild. Time moves forward no matter what you decide.
       <br><br>
       Your story ends in one of two ways. You flee the country before it collapses completely. Or you endure long enough to reshape it into something better. Health fades. Freedom shrinks. The clock never stops.
     </p>
+  </section>
+
+  <!-- divider -->
+  <div class="game-divider">
+    <div class="game-divider-line"></div>
+    <span class="game-divider-text">&#9670; ULTIMATE OBJECTIVE &#9670;</span>
+    <div class="game-divider-line"></div>
   </div>
-</div>
 
-<!-- section3 -->
-<div class="grid-layout">
-  <div class="left-section">
-    <div class="left-section-upper">
-      <div class="right-arrow">
-        <img src="img/arrow-logo.png" alt="Arrow">
+  <!-- objective section -->
+  <section class="game-objective">
+    <div class="game-objective-text">
+      <div class="game-objective-arrows">
+        <img src="img/arrow-logo.png" alt="">
+        <span>Your Mission</span>
+        <img src="img/arrow-logo.png" alt="" class="flip">
       </div>
-
-      <div class="middle-text">
-        ULTIMATE OBJECTIVE
-      </div>
-
-      <div class="left-arrow">
-        <img src="img/arrow-logo.png" alt="Arrow">
-      </div>
-    </div>
-
-    <div class="left-section-below">
-      <p class="paragraph">
-        Survive long enough to either escape to another country or transform your homeland into a utopian society—before you run out of health, freedom, or time. Players will encounter dynamic events, randomized opportunities, and morally challenging decisions that can alter the course of their survival. Every day in the game world is a gamble between security and ambition.
+      <h2 class="game-objective-heading">
+        Survive.<br>
+        <span>Escape or Rebuild.</span>
+      </h2>
+      <p class="game-objective-body">
+        Survive long enough to either escape to another country or transform your homeland into a utopian society — before you run out of health, freedom, or time. Players will encounter dynamic events, randomized opportunities, and morally challenging decisions that can alter the course of their survival. Every day in the game world is a gamble between security and ambition.
       </p>
     </div>
-  </div>
-  
-  <div class="right-section">
-    <img src="img/UI-DESIGN.png" alt="Game UI Design">
-  </div>
-</div>
+    <div class="game-objective-img">
+      <img src="img/UI-DESIGN.png" alt="Game UI Design">
+    </div>
+  </section>
 
-<!-- section 4 -->
-<div class="header-sec4">
-  <h1>core mechanics</h1>
-</div>
-
-<div class="box">
-  <div class="box1">
-    <h1>survival</h1>
-    <p>Your hunger decreases each day and drops faster when you travel, work, protest, or fight. Low hunger reduces your health recovery, action efficiency, and chance of success. If hunger reaches zero, you lose health and face higher risks like illness or arrest. You must decide whether to buy overpriced food, scavenge with danger, or endure hunger to save resources for escape or reform.</p>
+  <!-- divider -->
+  <div class="game-divider">
+    <div class="game-divider-line"></div>
+    <span class="game-divider-text">&#9670; CORE MECHANICS &#9670;</span>
+    <div class="game-divider-line"></div>
   </div>
-  <div class="box2">
-    <h1>action choice</h1>
-    <p>You receive a limited number of action points daily. Every action consumes time, hunger, and sometimes freedom or safety. Some actions provide short term survival while others push long term goals. Your choices trigger consequences that can appear immediately or days later. Each day forces you to choose between staying safe and taking risks to change your future.</p>
-  </div>
-  <div class="box3">
-    <h1>farming</h1>
-    <p>You can plant small gardens or community farms using limited resources. Crops take several days to grow and depend on security and random events. Successful harvests provide food and trade goods. Farming reduces hunger pressure over time but leaves you vulnerable to raids or government seizure. You must decide whether to protect, share, or exploit your food supply.</p>
-  </div>
-</div>
 
-<!-- footer -->
-<footer class="footer">
-  <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
-    &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
-</footer>
+  <!-- mechanics section -->
+  <section class="game-mechanics">
+    <h2 class="game-mechanics-title">How You Play</h2>
+    <div class="game-mechanics-grid">
+      <div class="mechanic-card">
+        <div class="mechanic-card-title">Survival</div>
+        <p class="mechanic-card-body">Your hunger decreases each day and drops faster when you travel, work, protest, or fight. Low hunger reduces your health recovery, action efficiency, and chance of success. If hunger reaches zero, you lose health and face higher risks like illness or arrest. You must decide whether to buy overpriced food, scavenge with danger, or endure hunger to save resources for escape or reform.</p>
+      </div>
+      <div class="mechanic-card">
+        <div class="mechanic-card-title">Action Choice</div>
+        <p class="mechanic-card-body">You receive a limited number of action points daily. Every action consumes time, hunger, and sometimes freedom or safety. Some actions provide short term survival while others push long term goals. Your choices trigger consequences that can appear immediately or days later. Each day forces you to choose between staying safe and taking risks to change your future.</p>
+      </div>
+      <div class="mechanic-card">
+        <div class="mechanic-card-title">Farming</div>
+        <p class="mechanic-card-body">You can plant small gardens or community farms using limited resources. Crops take several days to grow and depend on security and random events. Successful harvests provide food and trade goods. Farming reduces hunger pressure over time but leaves you vulnerable to raids or government seizure. You must decide whether to protect, share, or exploit your food supply.</p>
+      </div>
+    </div>
+  </section>
 
-<script>
-  const observerOptions = {
-    threshold: 0.2, 
-    rootMargin: '0px 0px -100px 0px'
-  };
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img class="footer-logo" src="img/logo.png" alt="Logo">
+      <p class="footer-copy">
+        &copy; 2026 FETI Entertainment &nbsp;|&nbsp; Privacy &nbsp;|&nbsp; Terms of Use
+        &nbsp;|&nbsp; Built by ESGUERRA &nbsp;|&nbsp; Design by CAMONIAS
+      </p>
+    </div>
+  </footer>
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      } else {
-        entry.target.classList.remove('visible');
-      }
+  <script>
+    // header scroll
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
     });
-  }, observerOptions);
 
-  const animatedElements = document.querySelectorAll(
-    '.content, .main-content, .left-section-upper, .left-section-below, .right-section, .header-sec4, .box'
-  );
+    // hamburger
+    const ham     = document.getElementById('hamburger');
+    const navList = document.getElementById('centerNav');
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      navList.classList.toggle('open');
+    });
 
-  animatedElements.forEach(element => {
-    observer.observe(element);
-  });
-</script>
+    // section fade in/out
+    const sections = document.querySelectorAll('.game-hero, .game-about, .game-objective, .game-mechanics');
 
+    function updateSections() {
+      const vh = window.innerHeight;
+      sections.forEach(sec => {
+        const r = sec.getBoundingClientRect();
+        const visible = Math.min(r.bottom, vh) - Math.max(r.top, 0);
+        const coverage = visible / vh;
+        const opacity = coverage >= 0.5 ? 1 : Math.max(0, coverage / 0.5);
+        sec.style.opacity = opacity;
+        sec.style.transform = coverage >= 0.5
+          ? 'translateY(0)'
+          : `translateY(${(1 - opacity) * 24}px)`;
+      });
+    }
+
+    window.addEventListener('scroll', updateSections, { passive: true });
+    window.addEventListener('resize', updateSections);
+    updateSections();
+  </script>
 </body>
 </html>

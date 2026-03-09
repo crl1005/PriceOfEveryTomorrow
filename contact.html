@@ -5,133 +5,165 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Price of Every Tomorrow - Contact</title>
 
-  <!-- files -->
   <link rel="stylesheet" href="css/contact-us.css">
   <link rel="stylesheet" href="css/home-header.css">
   <link rel="icon" type="image/png" href="favicon.png">
-  
-  <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header> 
-  <nav class="header-nav">
-    <div class="header">
-      <div class="left-logo">
-        <img class="header-logo" src="img/logo.png" alt="Logo">
+  <!-- header -->
+  <header id="siteHeader">
+    <nav class="header-nav">
+      <div class="header-logo-left">
+        <a class="header-logo-wrap" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="Price of Every Tomorrow">
+        </a>
       </div>
 
-      <!-- Hamburger Button -->
-      <button class="hamburger" onclick="this.classList.toggle('active'); 
-      document.querySelector('.center-nav').classList.toggle('active')">
-        <span></span>
-        <span></span>
-        <span></span>
+      <ul class="center-nav" id="centerNav">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="game.html" class="nav-link">Game Info</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+      </ul>
+
+      <div class="header-logo-right">
+        <a href="#" class="nav-cta">Get Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
       </button>
-      
-      <div class="center-nav">
-        <a href="index.html">Home</a>
-        <a href="game.html">Game Info</a>
-        <a href="contact.html" class="active">Contact</a>
-        <a href="aboutus.html">About us</a>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section class="contact-hero">
+    <div class="contact-hero-bg">
+      <img src="img/body-bg.jpg" alt="Background">
+    </div>
+    <div class="contact-hero-grid"></div>
+    <div class="contact-hero-vignette"></div>
+    <div class="contact-hero-content">
+      <span class="contact-hero-eyebrow">Get In Touch</span>
+      <h1 class="contact-hero-title">Need to<br>Contact Us?</h1>
+      <p class="contact-hero-sub">Questions, feedback, or support — we're here for you.</p>
+    </div>
+  </section>
+
+  <!-- contact cards -->
+  <section class="contact-cards">
+    <div class="contact-cards-grid">
+
+      <div class="contact-card">
+        <div class="contact-card-title">FAQs</div>
+        <p class="contact-card-body">Find quick answers to common questions about gameplay, mechanics, progress, and technical requirements. This section helps you understand the game and resolve issues without delay.</p>
+        <a href="mailto:camoniasjohnkuer@gmail.com" class="contact-card-btn"><span>FAQs</span></a>
       </div>
 
-      <div class="right-nav">Get Now</div>
+      <div class="contact-card">
+        <div class="contact-card-title">Support</div>
+        <p class="contact-card-body">Report glitches, crashes, or unexpected behavior you experience while playing. Your reports help improve performance, balance, and overall game stability.</p>
+        <a href="mailto:camoniasjohnkuer@gmail.com" class="contact-card-btn"><span>Support</span></a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-title">Feedback & Suggestions</div>
+        <p class="contact-card-body">Share your thoughts, suggestions, and feature ideas. Your feedback helps shape future updates and improve the overall direction of the game.</p>
+        <a href="mailto:camoniasjohnkuer@gmail.com" class="contact-card-btn"><span>Feedback</span></a>
+      </div>
+
     </div>
-  </nav>
-</header>
+  </section>
 
-<div class="background-img">
-  <img src="img/body-bg.jpg" alt="Background">
-</div>
-    
-<div class="content">
-  <h1 class="content-header">NEED TO CONTACT US?</h1>
-  <div class="content-paragraph">
-    Get in touch with us for questions, feedback, or support.
+  <!-- divider -->
+  <div class="contact-divider">
+    <div class="contact-divider-line"></div>
+    <span class="contact-divider-text">&#9670; FOLLOW US &#9670;</span>
+    <div class="contact-divider-line"></div>
   </div>
-</div>
 
-<div class="box">
-  <div class="faqs">
-    <p class="tip">FAQS</p>
-    <p class="second-text">Find quick answers to common questions about gameplay, mechanics, progress, and technical requirements. This section helps you understand the game and resolve issues without delay.</p>
-    <a href="mailto:camoniasjohnkuer@gmail.com" target="_blank" rel="noopener noreferrer">
-    <button>FAQS</button>
+  <!-- social -->
+  <section class="contact-social">
+    <span class="contact-social-label">Our Channels</span>
+    <div class="contact-icons">
+      <a class="contact-icon-link" href="https://www.facebook.com/HAHAHAHAHAHAAHsadboyMode" target="_blank" rel="noopener noreferrer">
+        <img src="img/facebook.png" alt="Facebook">
       </a>
-  </div>
-  <div class="support">
-    <p class="tip">SUPPORT</p>
-    <p class="second-text">Report glitches, crashes, or unexpected behavior you experience while playing. Your reports help improve performance, balance, and overall game stability.</p>
-    <a href="mailto:camoniasjohnkuer@gmail.com" target="_blank" rel="noopener noreferrer">
-    <button>SUPPORT</button>
+      <a class="contact-icon-link" href="https://www.youtube.com/@JohnKuerCamonias-t6z" target="_blank" rel="noopener noreferrer">
+        <img src="img/youtube.png" alt="YouTube">
       </a>
-  </div>
-  <div class="feedback">
-    <p class="tip">FEEDBACK & SUGGESTIONS</p>
-    <p class="second-text">Share your thoughts, suggestions, and feature ideas. Your feedback helps shape future updates and improve the overall direction of the game.</p>
-    <a href="mailto:camoniasjohnkuer@gmail.com" target="_blank" rel="noopener noreferrer">
-    <button>FEEDBACK</button>
+      <a class="contact-icon-link" href="https://www.instagram.com/nwl_crl/" target="_blank" rel="noopener noreferrer">
+        <img src="img/instagram.png" alt="Instagram">
       </a>
+      <a class="contact-icon-link" href="https://www.instagram.com/camoniasjohnkuer/" target="_blank" rel="noopener noreferrer">
+        <img src="img/twitter.png" alt="Twitter">
+      </a>
+    </div>
+  </section>
+
+  <!-- divider -->
+  <div class="contact-divider">
+    <div class="contact-divider-line"></div>
+    <span class="contact-divider-text">&#9670; DIRECT CONTACT &#9670;</span>
+    <div class="contact-divider-line"></div>
   </div>
-</div>
 
-<div class="media-transition">
-  <h3>FOLLOW US</h3>
-  <div class="icons">
-    <a href="https://www.facebook.com/HAHAHAHAHAHAAHsadboyMode" target="_blank" rel="noopener noreferrer">
-      <img class="media-icons" src="img/facebook.png" alt="Facebook">
-    </a>
-    <a href="https://www.youtube.com/@JohnKuerCamonias-t6z" target="_blank">
-      <img class="media-icons" src="img/youtube.png" alt="YouTube">
-    </a>
-    <a href="https://www.instagram.com/nwl_crl/" target="_blank">
-      <img class="media-icons" src="img/instagram.png" alt="Instagram">
-    </a>
-    <a href="https://www.instagram.com/camoniasjohnkuer/" target="_blank" rel="noopener noreferrer">
-    <img class="media-icons" src="img/twitter.png" alt="Twitter">
-    </a>
-  </div>
-</div>
+  <!-- email -->
+  <section class="contact-email">
+    <span class="contact-email-label">Send Us an Email</span>
+    <a class="contact-email-address" href="mailto:fetientertainment@gmail.com">fetientertainment@gmail.com</a>
+  </section>
 
-<div class="email">
-  <h4>SEND US AN EMAIL</h4>
-  <p>fetientertainment@gmail.com</p>
-</div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <img class="footer-logo" src="img/logo.png" alt="Logo">
+      <p class="footer-copy">
+        &copy; 2026 FETI Entertainment &nbsp;|&nbsp; Privacy &nbsp;|&nbsp; Terms of Use
+        &nbsp;|&nbsp; Built by ESGUERRA &nbsp;|&nbsp; Design by CAMONIAS
+      </p>
+    </div>
+  </footer>
 
-<!-- footer -->
-<footer class="footer">
-  <p>&copy; All Rights Reserved FETI Entertainment 2026 &vert; Privacy &vert; Terms of use 
-    &vert; Site Build by ESGUERRA &vert; Site Design by CAMONIAS</p>
-</footer>
-
-<script>
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top <= (window.innerHeight || document.documentElement.clientHeight) - 100 &&
-      rect.bottom >= 0
-    );
-  }
-
-  function handleScrollAnimations() {
-    const animatedElements = document.querySelectorAll('.box, h1, .content, .media-transition, .email, .icons');
-    
-    animatedElements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('visible');
-      } else {
-        element.classList.remove('visible');
-      }
+  <script>
+    // header scroll
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 40);
     });
-  }
 
-  window.addEventListener('scroll', handleScrollAnimations);
-  window.addEventListener('load', handleScrollAnimations);
-  handleScrollAnimations();
-</script>
+    // hamburger
+    const ham     = document.getElementById('hamburger');
+    const navList = document.getElementById('centerNav');
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      navList.classList.toggle('open');
+    });
 
+    // section fade in/out
+    const sections = document.querySelectorAll('.contact-hero, .contact-cards, .contact-social, .contact-email');
+
+    function updateSections() {
+      const vh = window.innerHeight;
+      sections.forEach(sec => {
+        const r = sec.getBoundingClientRect();
+        const visible = Math.min(r.bottom, vh) - Math.max(r.top, 0);
+        const coverage = visible / vh;
+        const opacity = coverage >= 0.5 ? 1 : Math.max(0, coverage / 0.5);
+        sec.style.opacity = opacity;
+        sec.style.transform = coverage >= 0.5
+          ? 'translateY(0)'
+          : `translateY(${(1 - opacity) * 24}px)`;
+      });
+    }
+
+    window.addEventListener('scroll', updateSections, { passive: true });
+    window.addEventListener('resize', updateSections);
+    updateSections();
+  </script>
 </body>
 </html>
