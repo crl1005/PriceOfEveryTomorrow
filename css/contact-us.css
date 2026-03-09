@@ -311,7 +311,7 @@ ul  { list-style: none; }
 .contact-icon-link:hover { transform: translateY(-6px); }
 .contact-icon-link img {
   width: 48px; height: 48px;
-  filter: brightness(0) invert(1) opacity(0.4);
+  filter: brightness(0) invert(1);
   transition: filter 0.3s, transform 0.3s;
 }
 .contact-icon-link:hover img {
